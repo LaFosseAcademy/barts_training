@@ -1,30 +1,43 @@
 # Barts Health NHS — Data Skills Training Programme
 
 **Delivered via:** Microsoft 365 Online (Excel Online, PowerPoint Online, Power BI, Copilot)
-**Duration:** 1 Full Day (approx. 7 hours of learning, including breaks)
+**Duration:** 2 Half Days (09:00–13:00 each day)
 **Audience:** Barts Health administrative and operational staff
-**Format:** Four modules delivered in sequence; each builds on the last
+**Format:** Four modules delivered in sequence across two sessions; each builds on the last
 
 ---
 
-## Day Overview
+## Programme Overview
 
-| Time | Module |
+### Day 1 — 09:00 to 13:00
+
+| Time | Session |
 |---|---|
-| 09:00 – 11:30 | Module 1 — Data Access, Cleaning & Analysis |
-| 11:30 – 11:45 | Break |
-| 11:45 – 13:15 | Module 2 — Data Visualisation & Storytelling |
-| 13:15 – 14:00 | Lunch |
-| 14:00 – 15:30 | Module 3 — Accelerating with Copilot |
-| 15:30 – 15:45 | Break |
-| 15:45 – 16:45 | Module 4 — End-to-End Workflow |
-| 16:45 – 17:00 | Wrap-up & Reflection |
+| 09:00 – 10:30 | Module 1 — Data Access, Cleaning & Analysis (Blocks 1–3) |
+| 10:30 – 10:45 | Break |
+| 10:45 – 11:45 | Module 1 — Data Access, Cleaning & Analysis (Blocks 4–5) |
+| 11:45 – 12:15 | Module 2 — Data Visualisation & Storytelling (Block 1) |
+| 12:15 – 12:30 | Break |
+| 12:30 – 13:00 | Module 2 — Data Visualisation & Storytelling (Block 2) |
+
+### Day 2 — 09:00 to 13:00
+
+| Time | Session |
+|---|---|
+| 09:00 – 09:15 | Recap of Day 1 & Narrative Framework |
+| 09:15 – 10:45 | Module 3 — Accelerating with Copilot (Blocks 1–3) |
+| 10:45 – 11:00 | Break |
+| 11:00 – 11:30 | Module 3 — Accelerating with Copilot (Block 4) |
+| 11:30 – 12:15 | Module 4 — End-to-End Scenario (Block 1) |
+| 12:15 – 12:30 | Break |
+| 12:30 – 12:45 | Module 4 — Peer Review & Debrief (Block 2) |
+| 12:45 – 13:00 | Module 4 — Action Planning & Close (Block 3) |
 
 ---
 
 ## Module 1 — Data Access, Cleaning & Analysis
 
-**Duration:** 2.5 hours (5 × 30-minute blocks)
+**Duration:** 2 hours 15 minutes (5 × 30-minute blocks, spanning the break) — Day 1, 09:00–11:15
 **Platform:** Excel Online
 
 ### Learning Goals
@@ -66,14 +79,16 @@ By the end of this module, participants will be able to:
 - IFERROR to handle formula errors gracefully
 - Hands-on: build a summary section using formulas on the cleaned dataset
 
-**Block 4 — VLOOKUP vs XLOOKUP (10:30–11:00)**
+*— Break 10:30–10:45 —*
+
+**Block 4 — VLOOKUP vs XLOOKUP (10:45–11:15)**
 - What a lookup formula does and why it matters
 - VLOOKUP: syntax, limitations (left-to-right only, fragile column indexing)
 - XLOOKUP: syntax, flexibility (any direction, not-found handling, exact/approximate match)
 - Side-by-side comparison using the same data scenario
 - Hands-on: replace a VLOOKUP with XLOOKUP and observe the difference
 
-**Block 5 — PivotTables & Summary Structures (11:00–11:30)**
+**Block 5 — PivotTables & Summary Structures (11:15–11:45)**
 - Building a simple PivotTable from a structured table
 - Grouping, filtering, and refreshing pivot data
 - When to use a PivotTable vs a formula-based summary
@@ -87,7 +102,7 @@ By the end of Module 1, participants have a working, clean dataset summarised by
 
 ## Module 2 — Data Visualisation & Storytelling
 
-**Duration:** 1.5 hours (3 × 30-minute blocks)
+**Duration:** 1 hour 15 minutes (3 blocks, spanning the second break) — Day 1, 11:45–13:00
 **Platform:** Excel Online, Power BI (overview), Microsoft Fabric (overview)
 
 ### Learning Goals
@@ -117,27 +132,24 @@ By the end of this module, participants will be able to:
 - Common mistakes: using pie charts for too many categories, dual-axis charts that mislead
 - Hands-on: given four data scenarios, participants select and justify a chart type for each
 
-**Block 2 — Building & Decluttering Charts in Excel Online (12:15–12:45)**
+*— Break 12:15–12:30 —*
+
+**Block 2 — Building & Decluttering Charts in Excel Online (12:30–13:00)**
 - Inserting charts from a PivotTable or data range
 - Formatting for clarity: removing chart borders, softening gridlines, choosing accessible colours
 - Writing chart titles that tell the story ("Attendance declined 12% in Q3" not "Attendance by Quarter")
+- Introduction to Power BI and Microsoft Fabric: how dashboards from these tools complement Excel at Barts Health
 - Hands-on: build and format two charts from the Module 1 dataset
-
-**Block 3 — Telling the Data Story (12:45–13:15)**
-- The Context → Insight → Recommendation framework: what it is and why it works for senior audiences
-- Translating a chart into a slide: one message per slide, lead with the insight
-- Introduction to Power BI and Microsoft Fabric: how dashboards from these tools are used at Barts Health and how outputs can be embedded or referenced in presentations
-- Hands-on: take one chart and build a single-slide summary using the narrative framework
 
 ### Conclusion
 
-By the end of Module 2, participants can turn a cleaned dataset into a clear, insight-led visual and frame it as a coherent message for a senior stakeholder. The key principle: **a chart without a narrative is just a picture**. The Context → Insight → Recommendation framework gives participants a repeatable structure they can apply to any data communication task.
+By the end of Module 2, participants can select appropriate chart types and build clean, formatted visuals from their data. The Context → Insight → Recommendation narrative framework is introduced as a short recap at the start of Day 2, giving participants time to absorb it overnight and apply it immediately in Module 3 and 4. The key principle: **a chart without a narrative is just a picture**.
 
 ---
 
 ## Module 3 — Accelerating with Copilot
 
-**Duration:** 1.5 hours (3 × 30-minute blocks)
+**Duration:** 2 hours (4 × 30-minute blocks, spanning the first break) — Day 2, 09:15–11:15
 **Platform:** Microsoft Copilot within Excel Online, PowerPoint Online, Word Online, Outlook, Teams
 
 ### Learning Goals
@@ -161,23 +173,32 @@ By the end of this module, participants will be able to:
 
 ### 30-Minute Block Breakdown
 
-**Block 1 — Effective Prompting & Copilot in Excel (14:00–14:30)**
+> **Day 2 opens (09:00–09:15)** with a brief facilitator-led recap of Day 1, covering the Context → Insight → Recommendation narrative framework introduced at the end of Module 2. This bridges the two days and frames how Copilot will accelerate the same workflow participants have already built manually.
+
+**Block 1 — Effective Prompting & Copilot in Excel (09:15–09:45)**
 - What makes a good prompt: role, context, task, constraints, desired output format
 - Common prompting mistakes and how to fix them
 - Copilot in Excel: asking Copilot to explain a dataset, suggest a formula, or summarise a column
 - Hands-on: use Copilot to generate and explain two formulas from a provided dataset, then validate the output manually
 
-**Block 2 — Copilot in PowerPoint & Word (14:30–15:00)**
+**Block 2 — Copilot in PowerPoint & Word (09:45–10:15)**
 - Generating a first-draft slide deck from a prompt or existing document using Copilot
 - Refining and editing Copilot-generated slides to meet Barts Health standards
 - Copilot in Word: drafting a narrative summary from a data table; rewriting for tone; summarising a long document
 - Hands-on: use Copilot to create a first-draft summary slide from the Module 2 dataset, then improve it
 
-**Block 3 — Copilot Across Teams, Outlook & Validation (15:00–15:30)**
+**Block 3 — Copilot Across Teams & Outlook (10:15–10:45)**
 - Copilot in Teams: summarising meeting notes and generating action points
 - Copilot in Outlook: drafting and refining emails to clinical and operational stakeholders
-- Validating AI-generated outputs: what to check before sharing anything Copilot has produced
 - Hands-on: draft a short stakeholder email using Copilot, then edit it to reflect the correct tone and data from earlier modules
+
+*— Break 10:45–11:00 —*
+
+**Block 4 — Validating Outputs & Building Repeatable Workflows (11:00–11:30)**
+- Validating AI-generated outputs: what to check before sharing anything Copilot has produced
+- Identifying which tasks benefit most from Copilot vs manual effort
+- Building simple, repeatable Copilot workflows for recurring admin tasks
+- Hands-on: participants map two recurring tasks in their own role and design a prompt workflow for each
 
 ### Conclusion
 
@@ -187,7 +208,7 @@ By the end of Module 3, participants can use Copilot to meaningfully reduce time
 
 ## Module 4 — End-to-End Workflow
 
-**Duration:** 1 hour (2 × 30-minute blocks)
+**Duration:** 1 hour 30 minutes (3 blocks) — Day 2, 11:30–13:00
 **Platform:** Excel Online, PowerPoint Online, Microsoft Copilot
 
 ### Learning Goals
@@ -211,17 +232,19 @@ By the end of this module, participants will be able to:
 
 ### 30-Minute Block Breakdown
 
-**Block 1 — End-to-End Scenario (15:45–16:15)**
+**Block 1 — End-to-End Scenario (11:30–12:15)**
 - Participants receive a scenario brief and a raw, anonymised Barts Health dataset
 - Task: clean the data, analyse it, build relevant visuals, and produce a short insight-led presentation slide or summary — using any tools and approaches from Modules 1–3
 - Copilot use is permitted and encouraged where it genuinely saves time
 - Facilitator circulates to observe decisions and support where needed
 
-**Block 2 — Peer Review, Debrief & Action Planning (16:15–16:45)**
+**Block 2 — Peer Review & Group Debrief (12:15–12:45)**
 - Participants share outputs in pairs and give structured feedback: what is clear, what is missing, what would a senior stakeholder question?
 - Group debrief: what approaches worked well, where did people get stuck, what would they do differently?
+
+**Block 3 — Action Planning & Close (12:45–13:00)**
 - Personal action planning: each participant identifies one or two specific ways they will apply today's skills in their own role within the next 30 days
-- Facilitator summarises key learning and signposts post-session resources
+- Facilitator summarises key learning across both days and signposts post-session resources
 
 ### Conclusion
 
