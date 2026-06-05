@@ -187,4 +187,174 @@ If we go back to the spreadsheet we can see there's a few anomalies with the dat
 
  ### Cleaning Data
 
- To quickly showcasr that issue
+ #### White Space
+
+ Generally speaking when we clean data the first thing we do is observe the issues with the data and where they are, which we have done.
+
+ - There's multiple casings
+ - Missing values
+ - Hard to interprete values
+
+If there's any user input, maybe someone arrives at the training center at checks in one an iPad or a similar device they may accidentally input their name with a leading or trailing whitespace. 
+
+If I'm writing a simple query to see how many students are in a community placement I can write a simple function in an empty cell. 
+
+- *Click into cell K42 and type*: "Number of students in community"
+- *Click into cell L42 and type*
+
+```xlsx
+=COUNTIF(L36:L39,"Community")
+```
+
+So `COUNTIF` is the function and we have two arguments which are seperated by a comma. 
+
+1. The range of cells we're assessing
+2. The condition we're checking
+
+As we can see we get back 4. 
+
+If I introduce a trailing white space to one of the cells with "Community", then we get 3 instead.
+
+- *Add a trailing space into a cell with "Community"*
+- *Show change*
+
+So if there's any pieces of data which are typed in manually by a human it's always good to trim any leading or trailing white space. 
+
+There's a few ways to clean it, eventually we'll get CoPilot AI to do this for us but I'll write a new function.
+
+- *Click into cell S6*
+
+```xlsx
+=TRIM(CLEAN(L6))
+```
+
+This is just nesting two functions together.
+
+1. First, we clean the cell which removes any hidden formatting codes
+2. Then we TRIM which removes any leading or trailing whitespace
+
+All I'll do next is drag down or "Auto Fill" for every entry in this column.
+
+That's are cleaned data. 
+
+If I highlight all of it and then copy it, I can do to the original column *L6* and do a "Paste Special" which essentially let's me choose if I want to paste the formulas, values or the styling with formatting. 
+
+I'll choose "Values Only" and it'll overwrite our original values with the clean ones. 
+
+Then we'll just delete the data we created in column S.
+
+Hopefully we can see our **countif** function is now correctly showing 4. 
+
+#### Standardise Casing
+
+We noticed in our **Trust** column that the casing wasn't accurate on Row 20 and then Row 30 and 31. 
+
+Now that we've removed any problematic white space, generally this is what we'd do next. 
+
+It's a very similar process. 
+
+- *In cell S6 write:*
+
+```xlsx
+=PROPER(A6)
+```
+
+- *Then Auto Fill*
+
+I'll copy the values and do another Special Paste into the original row. Then we can delete *column S* again. 
+
+As well as the *PROPER* function which will capitalise the first character of each new letter we can also use:
+- *LOWER()* which is useful for emails
+- *UPPER()* which you may use with PostCodes
+
+Most functions in excel actually aren't case sensetive but for data presentation and professionalism, it's not a step to miss out. 
+
+
+#### Standardised Values
+
+Another thing I noticed was in the trust section we had values like: `0923 BSc Barts-Contin` on row 10. 
+
+If there was an insight and the organisation just considered anything beginning with `0923 BSc Barts` to be the same cohort, it'd be difficult to extract this information from the data as it stands. 
+
+- *Write in cell S6*:
+
+```xlsx
+=IF()
+```
+
+If is another built in function which returns a boolean value, essentially either **True or False** based on a condition
+
+So if I add:
+
+```xlsx
+=IF(COUNTIF(A6,"0923 BSc*"))
+```
+
+This basically checks if the value in the cell A6 starts with "0923 BSc" regardless of what follows. 
+
+We can see in the little pop up it's telling me the arguments the function needs, with our condition, we can provide a value to add if the condition is True or False. 
+
+In my use case I essentially want a new column of the students original cohort, regardless of if it's a **continued placement** or they've perhaps **extended their degree**
+
+The second argument is just going to be text wrapped in double quotes.
+
+```xlsx
+=IF(COUNTIF(A6,"0923 BSc*"),"0923 BSc Barts")
+```
+
+Then if the condition returns False, I want to leave it as the original value. 
+
+```xlsx
+=IF(COUNTIF(A6,"0923 BSc*"),"0923 BSc Barts",A6)
+```
+
+- *Then auto fill the other rows*
+
+If we wanted to we could use Column S as our base data for a new column to replace the "From 0922" Values but I'll leave this for now. 
+
+I'm not going to overwrite the original data, in a couple of weeks if someone asks, *"how many students have extended their degree"*, we want to be able to answer them. 
+
+So I'm going to leave this as a new column which will persist. 
+
+- *In cell S5 type:* "Original cohort"
+
+#### Fill or Infer missing values
+
+That'll be our clean data for the time being. As we saw it's quite manual, this is fine, we'll be using CoPilot this time next session to achieve those results which better efficiency. 
+
+What's more important is the process of getting to a stage where we can extract information with confidence that a trailing white space for instance won't cause errors. 
+
+The last thing I want to talk about is the missing entries. Unfortunately, there's not a silver bullet to address these but generally we have three options:
+
+1. **Populate missing values**
+  - This is seeing if there's another trusted source of data and adding in that information. 
+
+  - **Quinn Martin** from row 32 we can see is missing quite a few pieces of information:
+    - Trust
+    - Placement Dates
+    - Where their placement is
+
+  - If I open our second spreadsheet *student allocations*, on row 31, it looks like Quinn is based in A&E at the Royal London Hospital, so I can lift that information and add it to be first spreadsheet.
+
+  - *In `0923 BSc Student allocatons (LSBU-Barts Health)` in cell L32 add:* `A&E RLH`
+
+  We want go through all of these due to time restrictions but if you're not guessing, this is fine. 
+
+2. The second way we can fill in values to to **Derive them**
+  - This is essentially using logic to fill in missing data.
+  - In cell K32, we can see Quinn is missing this data as well.
+  - As I said you'll know these spreadsheets better than myself but it looks like all the Placement dates are the same, so what I'll do is make the assumption and lift the date from other values in the spreadsheet.
+
+  - *Copy `5 Jan-22 Feb '26` from another cell into K32*
+
+3. Our final option with missing data is **Leave it blank**
+
+  - I can't from the data I have access to, reasonbly infer the original cohort Quinn was on. 
+  - An absence of data is better than incorrect data.
+  - Generally speaking at this point you can flag for a review if it's important to fill out those values. 
+
+So: Populate when you know, derive when there's an agreed approach to derive, leave blank if you have neither. 
+
+#### Remove duplicates
+
+After this we could remove duplicates if they existed but following that our data would be ready to be assess. 
