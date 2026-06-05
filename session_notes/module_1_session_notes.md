@@ -163,3 +163,28 @@ If we think back to the data life cycle, this is the **Access** stage. When we o
 
 ## Block 2
 
+If we go back to the spreadsheet we can see there's a few anomalies with the data. 
+
+- On row 21: We're missing data about the **Trust**, **Placement Dates** then the **Allocated ward and department** info.
+
+- Between rows 36 and 39 we're missing data on the **Allocated ward and department**
+
+- Row 40 we're missing trust information with a few other things
+
+- Then generally throughout the spreadsheet it looks like there's varying ways information has been inputted. 
+  - row 10 the trust is Barts-contin
+  - row 11 it's Barts-ext degree
+  - 12 it's just BSc
+  - 20 it's *from 0922* with a lower case *f*
+  - rows 30 & 31 it's *From 0922* with an upper case *F*
+  - row 35 the trust name is *Other*
+ 
+ You'll have an understanding about the insights you want to collect from these types of reports but we can easily indentify that if we wanted to understand how many students were doing their placements in the Community. 
+
+ We've got the 4 between rows 36 and 39. We could guess Kendall Martinez on row 35 is part of the community placement or that Quinn Gonzalez is as well but they would just be assumptions.
+
+ With 35 students, 4 of which don't have the data regarding their placement location, that represents just over 11% of the entries. 
+
+ ### Cleaning Data
+
+ To quickly showcasr that issue
