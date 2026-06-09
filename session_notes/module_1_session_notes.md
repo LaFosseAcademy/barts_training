@@ -93,7 +93,7 @@ We start with:
 Those last two parts we'll tackle more comprehensively in Modules 3 and 4. 
 
 
-## Block 1
+## Block 1 - Getting Data into Excel Online
 
 So before we get started we need some data. 
 
@@ -161,7 +161,7 @@ Without that insight we can't start to identify any issues with the health of th
 
 If we think back to the data life cycle, this is the **Access** stage. When we open a file we understand it and assess it's quality.
 
-## Block 2
+## Block 2 - Cleaning & Structuring Data
 
 If we go back to the spreadsheet we can see there's a few anomalies with the data. 
 
@@ -358,3 +358,161 @@ So: Populate when you know, derive when there's an agreed approach to derive, le
 #### Remove duplicates
 
 After this we could remove duplicates if they existed but following that our data would be ready to be assess. 
+
+
+## Block 3 - Core Formulas for Analysis
+
+So now that we've got clean data I want to take a look through a few more formulas. 
+
+We've seen so far the **COUNTIF** and **IF** functions and I don't want to pause on this topic for too long. 
+
+The main reason being is because I wouldn't expect anyone to know to different arguments and values off the top of their head. Generally, and this is a good use for AI and Google, if there's something you want to do, give it a Google and see if there's a function which can achieve it. This is probably more time efficient than you remembering all of these.
+
+More generally though, formulas are how we turn a series of records into insights. A spreadsheet full of rows doesn't really tell us anything on its own. 
+
+With formulas we can ask:
+- how many?
+- how much?
+- which category?
+- what proportion?
+
+`COUNTIF` and `SUMIF` in particular are the workhoreses of administrative reporting. 
+
+We've seen that they allow us to slice a dataset by a condition without restructuring the data, without filtering and without manual counting. 
+
+If you haven't seen this already, you can answer the most common reporting questions with a single formula. 
+
+Another forumla which is probably remembering is `IFERROR`, the main reason is because if a formula displays an error, often to a senior stakeholder, that reads as carelessness, even if the underlying issue is the data that was shared with you by that stakeholder. 
+
+We can wrap formulas in a `IFERROR`, which is a small habit but improves the credibility of a report significantly. 
+
+To show case these I want to use a new spreadsheet: `L&D learner tracker FG`, if we can go through the same process of copying it into our personal folder. 
+
+- *Copy file into trainer folder*
+
+I recommend that before we start defining any formulas we create a new sheet at the bottom. 
+
+A generic name could be **Dashboard** and what we're doing is having a seperation of concerns. 
+
+- Raw data in a file
+- Dashboard or analysis in another
+
+Generally just keeps our files a little more organised. 
+
+There's no right name but anything which is descriptive of what it is. 
+
+Before I demo a few formulas I'll want to know what insights I'm interested in. 
+
+- I want to know how many students there are
+- How many have: 'passed', 'failed' are in 'progress', or 'not completed'
+
+So I'll add this header information to my Dashboard. 
+
+- *In dashboard sheet*
+  - *In A1 add*: Number of learners
+  - *In A2 add*: Pass
+  - *In A3 add*: Fail
+  - *In A4 add*: In progress
+  - *In A5 add*: Not completed
+
+For the number of students, we want to target, or count the number of non-empty cells in the name column of the 'Learner tracker' sheet. 
+
+That's fine, we can use the `COUNTA` formula. We pass in one argument, the range of information we want to count and it'll tell you how many values are present, ignoring empty cells. 
+
+The only thing I'll need to specify ontop of this is a reference to the sheet.
+
+- *In B1 add*: `=COUNTA('Learner tracker'!B5:B210)`
+
+Because 'Learner tracker' has a space in the middle I'll wrap it within single quotes. 
+
+I'll use a `CONTIF` for the other segments. 
+
+- *In B2 add*: `=COUNTIF('Learner tracker'!L:L,A2)`
+
+I could, instead of adding in A2, typed "Pass" inside double quotes, with a lot of these interlinking formulas, it's a trade of between what's readable for the person writing the formula and what's easy. 
+
+I'd always preference readability and maintainability though. 
+
+This does allow me to 'fill down' against our other outcomes. 
+
+- *Auto fill down*
+
+Another set of information we may be interested in is the number of students based at each site and the passrate. 
+
+I'll repeat a similar process, giving a section header to give the data meaning
+
+- *In cell A8 add*: 'Site'
+  - *In cell A9 add*: 'RLH'
+  - *In cell A10 add*: 'NUH'
+  - *In cell A11 add*: 'WXH'
+  - *In cell A12 add*: 'SBH'
+  - *In cell A13 add*: 'MEH'
+  - *In cell A14 add*: 'CW'
+  - *In cell A15 add*: 'GSS'
+
+Then to find the number of students, our workhorse of analysis, `COUNTIF`
+
+- *In cell B8 add*: 'Number of students'
+- *In cell B9 add*: `=COUNTIF('Learner tracker'!G:G,A9)`
+
+Then I'll 'fill down' the other sites as well. 
+
+A good thing to do at this point would be to check our work. I've manually gone through and looked for different sites.
+
+- *In cell A16 add*: 'Total'
+- *In cell B16 add*: `=SUM(B9:B15)`
+
+Now we can do some more interesting analysis. 
+
+- *In cell C8 add*: 'Pass'
+
+We're not just counting one thing now but many, so I'll use the `COUNTIFS` formula which let's us pass in a set of conditions. 
+
+- *In cell C9 add*: `=COUNTIFS('Learner tracker'!G:G,A9,'Learner tracker'!L:L,"Pass")`
+
+So we have 2 conditions, that for each row in coloumn G in the Learner tracker sheet has the value 'RLH' and also in row L has the value "Pass"
+
+- *auto fill down remaining values*
+
+Finally for this section, just the ability to find the percentage of those passed based on site. 
+
+- *In cell D8 add*: '% Passed'
+- *In cell D9 add*: `=C9/B9`
+
+- *auto fill down remaining values*
+
+Now I'll just format this as a percentage
+
+<img src="../trainer_images/1.png">
+
+We've got lots of formatting options.
+- I'll choose **Number**
+- Then **percentage**
+
+This type of calculation could cause an error. Hypothetically if we had oversight of a new hospital and initially had 0 students there, any number divided by 0 would cause an error. 
+
+Let me demo this quickly.
+
+- *On row 15 create a row underneath*
+  - *Add to new A16*: 'New Hosptial*
+  - *Auto fill down cell B16, C16, D16*
+
+We've correctly found that there's currently no students at 'New Hosptial' and therefore there's differently no students who've passed. That's fine, the 'Learner tracker' will be updated in due course but the problem is we've not got an error.
+
+What we ought to do is wrap our formulas with the `IFERROR`
+
+- *In cell D9, add*: `=IFERROR(C9/B9,"No students attending: "&A9)`
+
+What we're saying is, if the first argument produces an error, instead of displaying that error, pass the second argument instead. 
+
+I've combined some text and the cell value just with an ampersand. 
+
+- *Auto fill down*
+
+
+## Break
+
+Let's take a little break now, let's come back in 15 minutes and we'll look at combining data from several files. 
+
+## Block 4 - VLOOKUP vs XLOOKUP
+
