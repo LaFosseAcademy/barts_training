@@ -516,3 +516,209 @@ Let's take a little break now, let's come back in 15 minutes and we'll look at c
 
 ## Block 4 - VLOOKUP vs XLOOKUP
 
+Let's turn our attention to **Look Ups**, you'll most likely have heard about these in relation to a **VLOOKUP** and an **XLOOKUP**. 
+
+Generally, a look up is a process that searches for a specific piece of information in one part of your data and pulls back a corresponding value for the same row or column.
+
+"Find this value in one place, and bring back related information from somewhere else". 
+
+So in our spreadsheets, as we saw at the very beginning we have data relating to students inside the files:
+
+- 0923 BSc Student allocations (LSBU-Barts Health)
+- student allocations
+
+When you data which can potentially all fit together but it does span several folders, think **LOOKUP**. 
+
+If you don't already, let's reopen those two files from our personal folders. 
+
+### Difference between VLOOK and XLOOKUP
+
+You may have used **VLOOKUPs** before, they work but they're a bit more limited in regards to what they can do:
+
+If I refer to them as **'breaking silently'**, what I mean by that is they don't handle changes to a spreadsheet really well. If we change things around, reorder a column or have duplicates of data they can return incorrect values without giving an error.
+
+In these situations an error is probably favourable because at least you know something's gone wrong, rather than having incorrect information. 
+
+  - Can only look to the right — the lookup column must be the leftmost column in the range
+  - References columns by number, which breaks silently if columns are inserted or reordered
+  - Returns only the first match, with no easy handling of multiple matches
+  - Does not handle missing values gracefully without additional IFERROR wrapping
+
+
+**XLOOKUPS** on the other hand:
+  - Can look in any direction — left, right, or across rows
+  - References arrays directly rather than column numbers, so it does not break when the spreadsheet structure changes
+  - Has a built-in `if_not_found` argument, removing the need for a separate IFERROR
+
+What this basically means is that they're far more dynamic and don't break as quickly. 
+
+Let's actually create one. 
+
+So in `0923 BSc Student allocations (LSBU-Barts Health)` we have placement details from early January until late February.
+
+Then in `student allocations` we have similar data between early May and early June. 
+
+What I want to do is basically see their placement progression, from one area to another and track their progress. 
+
+In `student allocations` I'm going to create a new sheet called **tracker**
+
+- *Create new sheet called 'tracker'*
+    - *Intentionally omit the final closing parenthesies*
+
+- *In cell A1 type*: `=XLOOKUP(`
+
+We can see the syntax is the first argument is the **lookup_value**
+
+This ought to be a unique value based on the dataset. In our data an **email** would be a good value as two students may share the same name or location.
+
+I'm going to go into `student allocations -> Sheet1` and just copy the student email addresses. 
+
+- *Copy student email address into new 'tracker' sheet, starting from A2*
+- *Add to cell A1*: 'Student Emails'
+
+Let's define a **LOOKUP** again, we know how to reference data in a seperate sheet so I'll add that. 
+
+- *In cell B2 add*: `=XLOOKUP(A2,)`
+
+This is what we're using to search for in seperate spreadsheets or files. 
+
+The next argument to the formula is the **lookup_array**. This is asking, where shall I look for to find this email value you passed in as the **lookup_value**. 
+
+- *In cell B2 add*: `=XLOOKUP(A2,Sheet1!E:E,)`
+
+Then we can see the third argument is the **return_array**, that's simply asking us which row of corresponding information should we return
+
+- *In cell B2 add*: `=XLOOKUP(A2,Sheet1!E:E,Sheet1!C:C)`
+
+The other three arguments are:
+1. **if_not_found**
+2. **match_mode**
+3. **search_mode**
+
+**if_not_found** is straight forward, what value to give if not information isn't present in that look up. 
+
+i.e. If the email address found in Sheet1 doesn't have a corresponding email in Sheet1 column E, what should I return. 
+
+I'll just add: 'Not found'
+
+- *In cell B2 add*: `=XLOOKUP(A2,Sheet1!E:E,Sheet1!C:C,"Not found",)`
+
+
+The **match_mode** argument takes a number to represent how we identify a match. 
+
+We're using an email to search other spreadsheets so we want an exact match which is 0. 0 is also the default value which is fine, but if we had scores asigned to each student and a table which had the tiers of scoring, i.e. 
+
+- 0 was a Fail
+- 40 was a Pass
+- 70 a Distinction
+
+We could use -1 to search the score column and find a match for a students score or a the next smaller score to know what band their in. 
+
+That sounds more complicated than it is, so I'll show you a quick example at the end. 
+
+If we pass **1** in instead, it does the same thing but searches for the next highest number.
+
+Then finally **2** takes a substring, so we can search for text which contains part of the value. 
+
+I'll leave mine as the default **0** and just add another comma. 
+
+- *In cell B2 add*: `=XLOOKUP(A2,Sheet1!E:E,Sheet1!C:C,"Not found",,)`
+
+
+Finally, we have the **search_mode**, I won't go into this in too much detail but it asks us whether we want to search:
+- top to bottom
+- bottom to top
+  - this is useful if we had exams where students were allowed to resit
+  - if each resit got added to the bottom of a spreadsheet we'd want to search **last-to-first** to take their latest score.
+- the **binary search** options are for when there's millions of rows and we're assisting excel to do it's job faster to tell the formula where to begin it's search
+  - not something often used
+
+I can add in a 1 or another comma if I wish but I want these formulas to be as readable as possible so actually I'm going to delete those last two commas and just assume the default values
+
+- *In cell B2 remove*: `=XLOOKUP(A2,Sheet1!E:E,Sheet1!C:C,"Not found")`
+
+- *In cell B1 add*: 'First Name'
+- *Auto fill down corresponding values*
+
+### Challenge
+
+I'd like you to spend 10 minutes adding two more look ups from **Sheet1**:
+- One for the student last name
+- Another for the student clinical area
+
+### Solution
+
+- **Last Name** - `=XLOOKUP(A2,Sheet1!E:E,Sheet1!D:D,"Not found")`
+- **04 May - 07 June Clinical Area** - `=XLOOKUP(A2,Sheet1!E:E,Sheet1!B:B,"Not found")`
+
+### Seperate files
+
+Let's finish with a look up on a seperate file all-together. 
+
+The syntax is exactly the same, we just need to change the **lookup_array** syntax, which was our second value.
+
+All we do is pass the file name in square brackets before targetting a sheet.
+
+- *In cell E1 add*: '05 Jan - 22 Feb Clinical Area'
+
+- *In cell E2 add*: `=XLOOKUP(A2,)`
+
+Then same as before, single quotes and a square bracket, where we put our filename in.
+
+- *In cell E2 add*: `'[0923 BSc Student allocations (LSBU-Barts Health)-.xlsx]Sheet1'!J:J,)`
+
+Then the same syntax to reference the column inform we want to bring in.
+
+- *In cell E2 add*: 
+```xlsx
+=XLOOKUP(
+    A2,
+    '[0923 BSc Student allocations (LSBU-Barts Health)-.xlsx]Sheet1'!J:J,
+    '[0923 BSc Student allocations (LSBU-Barts Health)-.xlsx]Sheet1'!L:L,
+    "Not found"
+)
+```
+
+You may have to click a little pop-up to trust external spreadsheets but it should be able to pull infrmation and consolidate information from several sources. 
+
+### Different match mode
+
+The final thing I'll show you that match mode we saw earlier.
+
+If we had data from assessments in a file we could use an XLOOKUP in a similar way but for ease I'll add my own mock data.
+
+- *In cell F1 add*: 'Score'
+
+Then I'll generate a random score for each of the students. 
+
+- *In cell F2 add*: `=RANDBETWEEN(0,100)`
+  - *Auto fill down*
+
+Again I'll just create a small table which breaks down results and a grade they align to.
+
+- *In cell M1 add*: 'Score'
+  - *In cell M2 add*: '0'
+  - *In cell M3 add*: '40'
+  - *In cell M4 add*: '70'
+- *In cell N1 add*: 'Grade'
+  - *In cell N2 add*: 'Fail'
+  - *In cell N3 add*: 'Pass'
+  - *In cell N4 add*: 'Distinction'
+
+- *In cell G2 add*: `=XLOOKUP(F2)`
+
+Our lookup value isn't now the email, but the score
+
+- *In cell G2 add*: `=XLOOKUP(F2, $M$2:$M$4)`
+
+Our lookup array is now those values between M2 and M4
+
+Notice I've used dollar symbols as well. When I go to **'auto fill down'**, I want want to increment the values from this range, by passing dollar symbols, excel will understand these to be absolute values instead. 
+
+- *In cell G2 add*: `=XLOOKUP(F2, $M$2:$M$4, $N$2:$N$4)`
+
+Then our return value is between N2 and N4
+
+I'll add an argument for when a value is not found and then a **match mode**, most of our learners won't have scored exactly a 0, 40 or 70 and we want to categarise them by grade so if I add a **-1** it'll check if there's a match, then look for the next smallest value in the **lookup_array** we gave.
+
+- - *In cell G2 add*: `=XLOOKUP(F2, $M$2:$M$4, $N$2:$N$4,"Not found",-1)`
