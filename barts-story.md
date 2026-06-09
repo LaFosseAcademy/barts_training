@@ -29,6 +29,17 @@ Module 1 is using the following datasets:
 - 0923 BSc Student allocations (LSBU-Barts Health)
 - student allocations
 
-to showcase the ability to perform X Look Ups across seperate files to retrieve information relating to one student 
+to showcase the ability to perform X Look Ups across seperate files to retrieve information relating to one student.
 
-It's framed around the question: *how can I pull information from 
+It's framed around the question: *how can I pull information from several sources to getter wider context to data?*
+
+
+# Using data to create and understand PivotTables
+
+Module 1 is using the following datasets:
+
+- Apprentice KPI tables April 2026
+
+to summarise large data sets without changing the underlying information.
+
+It's framed around the question: *how can I summarise large datasets when data is evolving and the insights I need a frequently changing?*
