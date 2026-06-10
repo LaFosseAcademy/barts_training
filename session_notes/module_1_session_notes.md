@@ -884,7 +884,7 @@ See the different ways you can present it and have your approach how to get mean
 
 I'd like to give you an opportunity to do that right now. 
 
-I'd like you to have a go and basically create a PivotTable which will show, from those who've **withdrawn** or **paused** their training, how many of them had any form of **caring responsibilities** or those who didnt. 
+What I want is for you to have a go and basically create a PivotTable which will show, from those who've **withdrawn** or **paused** their training, how many of them had any form of **caring responsibilities** or those who didnt. 
 
 
 ### Solution
