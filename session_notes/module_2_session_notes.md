@@ -140,3 +140,11 @@ It's not important that the viewer knows theres:
 This graph really quickly just shows the even distribution and the message lands straight away. 
 
 I've got the numbers to back that up if people are curious but the graph is to convey a message for an action. 
+
+The question to always ask yourself is when creating the chart is, *what is the one thing I want my audience to understand from this visual?* 
+
+Then find the chart type that most directly answers that question. 
+
+If you can write a single sentence beginning: *"This chart shows that..."*, then your chart is focused. 
+
+If that sentence contains multiple *"ands"*, consider splitting that message into multple charts. 
