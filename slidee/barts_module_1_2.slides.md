@@ -15,3 +15,8 @@
 
 ---
 
+<img src="./images/chart-1.png">
+
+---
+
+<img src="./images/chart-2.png">

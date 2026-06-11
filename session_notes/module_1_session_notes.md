@@ -8,7 +8,7 @@
 
 ## Pre-Session Setup
 
-- Load Slidee: barts_module_1
+- Load Slidee: barts_module_1_2
 
 
 ## Training
