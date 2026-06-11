@@ -20,3 +20,15 @@
 ---
 
 <img src="./images/chart-2.png">
+
+
+---
+
+<img src="./images/chart-3.png">
+
+
+---
+
+<img src="./images/chart-4.png">
+
+
