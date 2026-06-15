@@ -79,3 +79,84 @@ In the context of Excel, spreadsheets and data visualisation. If Microsoft train
 
 So just be careful. 
 
+### Where does Module 3 sit in the Data Lifecycle
+
+- `Slide 1`
+
+We've seen this data lifecycle before. We'll be using coPilot across multiple stages simultaneously, which is a strength and its main risk as well. 
+
+- It can help in this **analysis** stage, suggesting forumlas or summarising data
+- The **visualisations** stage, generating draft charts from the data
+- We can take it further into the **communication** stage as well, drafting emails, meeting summaries and any narrative text we want. 
+
+The risk though is if we have any errors they can propagate quite quickly.
+
+If CoPilot creates a wrong formula to assess some data, imagine if we don't catch up and we use CoPilot to create a chart off poor data and again use AI to create a slidedeck and a draft email which goes out to our team. 
+
+So with each step of this data lifecycle, we'll need to check our work. 
+
+## Block 1 - Effective Prompting & CoPilot in Excel
+
+Let's look at some prompts to begin with. 
+
+I'm going to delete the file: `0923 BSc Student allocations (LSBU-Barts Health)` from within our personal folder.
+
+Last session we cleaned this file so we'll start a fresh with the raw data.
+
+Then I'll copy over the file again from the root folder, back into my personal folder to work on it again.
+
+From my folder we should be able to see a little CoPilot icon on the file.
+
+<img src="../trainer_images/2.png">
+
+CoPilot has access to the file you are working in, and other files and emails in your Micrsoft 365 environment, depending on your organisations settings. 
+
+If we click on the button we should see:
+
+1. Summarise
+2. Create an FAQ
+3. Ask a question
+4. Create an agent
+
+Again, quick and easy ways to query your data without needing to open it. 
+
+Let me click on **Ask a question** and I'll ask: *"How many students are there?"*
+
+I did this before so I hope I get the same output.
+
+It said there's 35 students, based on the 35 distinct email entries in the spreadsheet. 
+
+This is correct as far as the data goes and allows me to quickly get insights about the data but let's open the file.
+
+- *Open file '0923 BSc Student allocations (LSBU-Barts Health)'*
+
+So we can see in the data that there is no column for student name and the AI has had to use some assumptions about our data. This is where the human reviewing the output is important. 
+
+We can approve the reasoning that if there's 35 distinct emails than the spreadsheet does actually have 35 students but I need to review how it came to that number before blindly taking 35 and sharing it with my team.
+
+
+
+Once it's open we open the file though should see in the bottom right of the screen a little CoPilot symbol again. 
+
+If I hover over it we'll see some options for:
+1. Add data insights
+2. Improve formatting
+3. Add a formula
+
+We'll explore these options soon but for now just click on the main logo again, which should open up a new window on the site of your screen. 
+
+From here there's some more default options CoPilot is trying to suggest for us. 
+
+One thing we can see is the current mode is to **Allow editing**
+
+<img src="../trainer_images/3.png">
+
+If we click onto that we'll see **Plan** and also **Chat only**.
+
+The **Plan** option is a little more secure so instead of making changes directly to the data, we can see the updates first. 
+
+Let's pick **Chat only** though. 
+
+This will let us use CoPilot like any LLM and provide queries or prompts on anything we're interested in. 
+
+Like any sort of grammer, there's a correct anatomy of what makes a good prompt. 
