@@ -134,7 +134,7 @@ So we can see in the data that there is no column for student name and the AI ha
 
 We can approve the reasoning that if there's 35 distinct emails than the spreadsheet does actually have 35 students but I need to review how it came to that number before blindly taking 35 and sharing it with my team.
 
-
+### Effective Prompting
 
 Once it's open we open the file though should see in the bottom right of the screen a little CoPilot symbol again. 
 
@@ -160,3 +160,106 @@ Let's pick **Chat only** though.
 This will let us use CoPilot like any LLM and provide queries or prompts on anything we're interested in. 
 
 Like any sort of grammer, there's a correct anatomy of what makes a good prompt. 
+
+- `Slide 2`
+
+We should specify the:
+- **role**: what do we want CoPilot to behave as
+- **context**: what the data or document is about
+- **task**: what you want CoPilot to do
+- **constraints**: limits on format, length etc..
+- **output format**: as a document, downloadable slide etc...
+
+So if my role was a training lead I could ask Copilot.
+
+- *Type as you say*
+
+*"Act training lead for NHS Barts Trust, review this apprenticeship tracker spreadsheet and tell me which LL staff supervise the most students. Count distinct students and output the numbers as a list in descending order"*
+
+If I then hit enter it'll crunch the numbers.
+
+- *Hit Enter*
+
+Again, the last time I did this it'll show you how it achieved the output and again, review the formula to make sure the reasoning stands up to your interpretation of the data. 
+
+So the framework around: role / context / task / contrainsts and output is to get relevant information out of CoPilot.
+
+### Prompting Mistakes
+
+Common mistakes are being too vauge or asking multple unrelated questions in a single prompt. 
+
+If I asked:
+
+- *"Give me information about the LL staff"*, that wouldn't return any focused information
+
+Or if I said:
+
+- *"Give me information about placement dates and how many students have a surname beginning with A"*, again, it wouldn't be focused and the extra complexity can confuse the AI. 
+
+
+### Main uses
+
+There's three main uses I think you'll more commonly have for CoPilot though. 
+
+1. Asking CoPilot to explain what a dataset contains and identify any quality issues
+2. Asking CoPilot to suggest a formula for a specific task, i.e.:
+  - *"write a formula that counts how many staff in column B that haven't completed training based on the value in column C"*
+3. Asking CoPilot to summarise a column or table in plain English, which is a little like what we've done. 
+
+So let me ask coPilot if there's any data quality issues. 
+
+- *Type as you say*
+- *"Can you identify any data quality issues with this spreadsheet"*
+
+Again, quick and easy and we then decide how to approach the cleaning process.
+
+
+### Cleaning Data
+
+Last session we cleaned this file by:
+- Removing white space
+- Standardise Casing
+- We standardised the values of the trust as well to have an **"Original Cohort"** column to seperate the different *Barts-continued* and *Barts extended* values we saw in the Trust column.
+- Finally we filled in some values from other spreadsheets as well, we used the **student allocations** spreadsheet to find some information about **Quinn Martin** on Row 32.  
+
+If we do this through CoPilot, it's my recommendation to do this one query at a time.
+
+CoPilot will get things wrong and one big query to clean this file may cause errors. If we work incrementally then we can make changes as we go.
+
+#### Prompt 1 - Trim Whitespace
+
+Remove all leading and trailing whitespace from every cell in this spreadsheet. 
+
+- So when we're done we should see the changes highlighted on our spreadsheet and if can click **Done** to confirm changes or simply undo the addition with a **ctrl + z** 
+
+#### Prompt 2 - Standardise casing in column A
+
+Standardise the text in column A to title case. 
+
+#### Prompt 3 — Add the Original Cohort column
+
+Insert one new column immediately to the right of column A. Name it "Original Cohort". For each row, copy the value from column A into this new column, then remove any suffixes including "-contin", "-continued", "-ext degree", and any similar variations, so that values read as their base cohort only. 
+
+#### Prompt 4 — The lookup
+
+In column L, some cells are empty. Fill only those empty cells using student_allocations.xlsx, which is in the same SharePoint folder as this file. Match students by email address — email is in column J of this spreadsheet and column D of student_allocations.xlsx. Where a match is found, copy the Clinical Area value from column A of student_allocations.xlsx. Do not create new columns. Do not overwrite cells in column L that already have a value.
+
+#### Overview
+
+Each of these prompts is actually quite long. 
+
+They do the job we asked them quite well but there's a consideration to how much time we're actually saving. 
+
+This is a good reason to use **CoPilot Agents**.
+
+An agent lets you write instructions once, in full detail and save them as a prompt.
+
+Every time we use the agent it'll understand the:
+- context
+- file structure
+- column references
+- information not to overwrite
+
+Let me undo all the changes and in `0923 BSc Student allocations (LSBU-Barts Health)` then I'll go back to the SharePoint to access the file again.
+
+<img src="../trainer_images/4.png">
