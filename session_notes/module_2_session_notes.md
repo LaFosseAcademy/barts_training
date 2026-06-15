@@ -148,3 +148,21 @@ Then find the chart type that most directly answers that question.
 If you can write a single sentence beginning: *"This chart shows that..."*, then your chart is focused. 
 
 If that sentence contains multiple *"ands"*, consider splitting that message into multple charts. 
+
+
+
+## Block 2 - Building & Decluttering Charts in Excel Online
+
+Let's actually build some charts together. 
+
+As I've said a few times, we need to be considered when creating charts. The presentation of a chart is a reflection on the consideration we've taken regarding the underlying data. 
+
+So although it may not seem that way, the presentation of our charts will correlate to whether the actions which ought to be taken off the back of them are or are not. 
+
+We want our charts to be free of cluter. Again, not for aesthetic reasons - it's about removing everything that competes with the message.
+
+- Gridlines
+- Borders
+- Redundant labels
+
+Anything the readers eye has to move past before it reaches the data. The fewer things there are to look at the faster and more accurately the findings land. 
