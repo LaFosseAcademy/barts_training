@@ -166,3 +166,5 @@ We want our charts to be free of cluter. Again, not for aesthetic reasons - it's
 - Redundant labels
 
 Anything the readers eye has to move past before it reaches the data. The fewer things there are to look at the faster and more accurately the findings land. 
+
+Part of this is also shifting from descriptive to insight-led titles. It requires no technical skill - only the discipline of asking *"what does this chart show?"* and writing that as the title, instead of the conventional description of the axes. 
