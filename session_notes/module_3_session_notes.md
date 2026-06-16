@@ -406,3 +406,19 @@ It may also prompt us as where to create the slide
 - before
 - after
 - or overwriting what we already have
+
+My main takeaway is the service you want to use. Whether it's:
+- excel
+- word
+- powerpoint
+
+Create a file for that service first and then use the specific CoPilot for that tool.
+
+Let's try and take this to Word as well. 
+
+- *Create a new Word file*
+- *Copy in the graph from either Excel or PowerPoint*
+
+Now in CoPilot for Word I can provide my prompt to generate a one page summary. 
+
+- *Act as an NHS Barts Health administrator reviewing workforce equality data. Analyse the graph showing the distribution of ethnicities across staff groups and provide a concise summary of the overall pattern, focusing on whether ethnicity representation is broadly evenly distributed across staff groups and highlighting any notable variations. Present the output as a short professional paragraph followed by 3–4 key takeaway bullet points suitable for inclusion in a report or presentation.*
