@@ -263,3 +263,57 @@ Every time we use the agent it'll understand the:
 Let me undo all the changes and in `0923 BSc Student allocations (LSBU-Barts Health)` then I'll go back to the SharePoint to access the file again.
 
 <img src="../trainer_images/4.png">
+
+If we click on the **Create agent** button we'll be able to define some actions we want to repeatedly take. 
+
+We'll be taken to a new window. I can see on the top a button called **Sources**
+
+<img src="../trainer_images/5.png">
+
+This will give the agent access to files we want it to be able to use and we can select 20. 
+
+<img src="../trainer_images/6.png">
+
+Then I can select the files I want. 
+
+We can include all the files present in the Documents folder but I'll just add the files in my personal folder for the timebeing. 
+
+- *Add*:
+  - `0923 BSc Student allocations (LSBU-Barts Health)`
+  - `L&D learner tracker FG`
+  - `student allocations`
+
+If we click on the **Behaviour** tab which sits next to **Sources** we can give the agent some behaviours. 
+
+#### Welcome messaging
+
+Under Welcome Messaging I'll add a little snippet about the agent. 
+
+*Data Prep Agent - Audits the file and tells you what it found - blank cells, duplicates, text-stored numbers, inconsistent casing, etc..*
+
+
+#### Starter prompts
+
+The **starter prompts** are messages a user can see when they use the agent to understand the types of questions they can ask.
+
+This agent I hope is going to make interacting with our raw data more truthworthy and less unpredictable so I'll add a few potential prompts someone may want to use. 
+
+- *Identify missing values, inconsistent formats, duplicate records, and potential errors.*
+- *Compare these Excel files and identify matching records, discrepancies, and opportunities to fill missing information.*
+- *Analyse uploaded files and suggest values for missing cells using information found in related workbooks.*
+
+What we hopefully can see is on the right hand side of the screen an **Agent overview** showing us how it'll look when we go to use it. 
+
+#### Agent Instructions
+
+Finally under **Agent instructions**, just to tell the agent it's role, limirations and the responses given.
+
+P*rovide accurate information about the selected files in a formal and professional tone. Keep responses concise, easy to scan, and focused on key findings. Prioritise identifying missing data, data quality issues, anomalies, and opportunities to populate missing values using information from other selected files. Present results as a small number of short bullet points, include confidence levels where values are suggested, and avoid lengthy explanations unless specifically requested. Ensure outputs are suitable for rapid review and exploration of newly received datasets.*
+
+
+#### Overview
+
+Finally, I'm going to click back into the **Overview** tab and just give the agent a name: **Data Prep Agent**
+
+- *Click 'Create agent'*
+
