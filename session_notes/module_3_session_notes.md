@@ -250,7 +250,14 @@ Each of these prompts is actually quite long.
 
 They do the job we asked them quite well but there's a consideration to how much time we're actually saving. 
 
-This is a good reason to use **CoPilot Agents**.
+AI is always learning and improving and a lot of the time you may be better plced to do things manually. 
+
+Where CoPilot really excels in relation to Excel spreadsheets are really in regards to:
+- Using it as a data-quality check
+- Using it to flag suspicious records for human review
+- Or producing summaries of spreadsheets
+
+These tasks which are repeatable, necessary and produce value are a good reason to use **CoPilot Agents**.
 
 An agent lets you write instructions once, in full detail and save them as a prompt.
 
@@ -258,7 +265,7 @@ Every time we use the agent it'll understand the:
 - context
 - file structure
 - column references
-- information not to overwrite
+
 
 Let me undo all the changes and in `0923 BSc Student allocations (LSBU-Barts Health)` then I'll go back to the SharePoint to access the file again.
 
@@ -298,9 +305,9 @@ The **starter prompts** are messages a user can see when they use the agent to u
 
 This agent I hope is going to make interacting with our raw data more truthworthy and less unpredictable so I'll add a few potential prompts someone may want to use. 
 
-- *Identify missing values, inconsistent formats, duplicate records, and potential errors.*
-- *Compare these Excel files and identify matching records, discrepancies, and opportunities to fill missing information.*
-- *Analyse uploaded files and suggest values for missing cells using information found in related workbooks.*
+- * Review this workbook for data-quality issues. Find missing values, duplicate fields, inconsistent date formats, inconsistent capitalisation, extra whitespace, placeholder values, and columns containing free text instead of structured values. Suggest likely corrections where another sheet in this workbook supports the value, and label each suggestion High, Medium, or Low confidence. Return: Key issues / Suggested fixes / Records needing manual review*
+- * Scan this workbook and flag suspicious records for human review. Focus on placeholder values, missing placement choices, unresolved notes, unexpected zero values, “Not found” entries, duplicated identifiers, and records where values conflict across sheets. For each flagged record, show: Record identifier / Suspicious field / Why it is suspicious / Possible correction if supported elsewhere in the workbook / Confidence level Return the result as a prioritised review list.*
+- * Summarise this workbook for rapid review. Explain what each sheet contains, highlight repeated categories, common status values, missing-data hotspots, and notable patterns in placements, grades, outcomes, cohorts, departments, or sites. Do not estimate counts unless they are clearly visible in the sheet. Return: Workbook summary / Key trends / Data issues affecting interpretation / Follow-up questions for a reviewer*
 
 What we hopefully can see is on the right hand side of the screen an **Agent overview** showing us how it'll look when we go to use it. 
 
@@ -308,7 +315,7 @@ What we hopefully can see is on the right hand side of the screen an **Agent ove
 
 Finally under **Agent instructions**, just to tell the agent it's role, limirations and the responses given.
 
-P*rovide accurate information about the selected files in a formal and professional tone. Keep responses concise, easy to scan, and focused on key findings. Prioritise identifying missing data, data quality issues, anomalies, and opportunities to populate missing values using information from other selected files. Present results as a small number of short bullet points, include confidence levels where values are suggested, and avoid lengthy explanations unless specifically requested. Ensure outputs are suitable for rapid review and exploration of newly received datasets.*
+*Provide accurate information about the selected files in a formal and professional tone. Keep responses concise, easy to scan, and focused on key findings. Prioritise identifying missing data, data quality issues, anomalies, and opportunities to populate missing values using information from other selected files. Present results as a small number of short bullet points, include confidence levels where values are suggested, and avoid lengthy explanations unless specifically requested. Ensure outputs are suitable for rapid review and exploration of newly received datasets.*
 
 
 #### Overview
@@ -316,4 +323,52 @@ P*rovide accurate information about the selected files in a formal and professio
 Finally, I'm going to click back into the **Overview** tab and just give the agent a name: **Data Prep Agent**
 
 - *Click 'Create agent'*
+
+Once it's created, we should be able to see the resource in our personal folder and we're able to use those prompts repeatedly. 
+
+We're able to edit this and give the agent overview of new files when they arrive and perform these tasks quickly at the initial stage of our data lifecycle. 
+
+One thing you may have noticed if you've used agents before is that they perform much weaker if you try to prompt the agent to make changes directly to the files. 
+
+My recommendation would be if this is something you care to use CoPilot to do, I'd recommend doing so directly from the file itself and using CoPilot from there. 
+
+What the agent will do instead is give you formulas or scripts to copy and paste. 
+
+The training the AI recieves, we can assume will always be improving but right now we're not quite at the point where we can do full automation. 
+
+## Block 2 - CoPilot in PowerPoint & Word
+
+Let's take a look trying to use CoPilot to create some visualisations. 
+
+I'm going to use: `Apprentice KPI tables April 2026`
+
+- *Open 'L&D learner tracker FG'*
+
+I've been asked to present back to the group regarding the ethnic background of our apprentices in each of the staff groups. 
+
+Potentially to see if there's an over or under representation of any ethnicity by group. 
+
+I know how to create a Pivot Table but I can delegate this responsibility to CoPilot. 
+
+So if I open CoPilot on the worksheet let me write a quick prompt. 
+
+- *Make sure CoPilot allows editing*
+
+- *Create a pivot table on a new sheet with a primary row of staff group and a column of ethnicity then for values a count of name ignoring staff groups of N/A and blank*
+
+Once that's created we can click **Done**
+
+It's at this stage I want to generate a visualisation for a PowerPoint Presentation I'll be presenting in a couple of days. 
+
+- *Create a stacked bar chart for total count in each staff group, broken down by ethnicity*
+
+- *Wait for chart to be created*
+
+Based on the chart, it's clear that there's no a even distribution of ethnicities in each staff group - which is something I can report back.
+
+I want to change the chart title to cut through any noise and land this message.
+
+Both the pivot table and chart, despite being created by CoPilot, we can customise ourself, so I'm going to take the opportunity to do this. 
+
+- *Edit chart heading to*: 'Even distribution of ethnicities amongst Staff Groups'
 
