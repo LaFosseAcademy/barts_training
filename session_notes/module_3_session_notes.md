@@ -372,3 +372,37 @@ Both the pivot table and chart, despite being created by CoPilot, we can customi
 
 - *Edit chart heading to*: 'Even distribution of ethnicities amongst Staff Groups'
 
+This is where I believe a huge benefit to using CoPilot is.
+
+With the CoPilot Agent, currently it's really useful for summarising data or seeing links within the data. 
+
+When you have lots of new files to constantly asses an agent is the right choice. 
+
+Once you understand the raw data you have acces to and need to go deeper to extract information from the data then using CoPilot to generate formulas or in our case Pivot Tables and visualisations will save you time.
+
+### PowerPoint
+
+I now want to put this all together in an actual powerpoint.
+
+Another limitation of CoPilot right now is cross service creation. 
+
+We can't easily use to CoPilot in Excel and ask it to create a PowerPoint deck. 
+
+So what I'll do is from my personal folderis create an empty PowerPoint and copy the graph I created over. 
+
+- *Create a new PowerPoint and copy the chart into Slide 1*
+
+Then using CoPilot built into PowerPoint I can run a prompt specific to that service.
+
+- *Add a new slide with 3 key insights regarding the ethnic spread of apprentices amongst the staff groups using the chart*
+
+CoPilot may prompt us for additional information if it wants more context about the style or tone of any new slides and it's at our discretion about the input we give it. 
+
+Generally speaking I will prefer a:
+- concise
+- minimal and professional tone
+
+It may also prompt us as where to create the slide
+- before
+- after
+- or overwriting what we already have
