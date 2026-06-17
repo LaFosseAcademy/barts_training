@@ -417,8 +417,66 @@ Create a file for that service first and then use the specific CoPilot for that 
 Let's try and take this to Word as well. 
 
 - *Create a new Word file*
-- *Copy in the graph from either Excel or PowerPoint*
+
 
 Now in CoPilot for Word I can provide my prompt to generate a one page summary. 
 
-- *Act as an NHS Barts Health administrator reviewing workforce equality data. Analyse the graph showing the distribution of ethnicities across staff groups and provide a concise summary of the overall pattern, focusing on whether ethnicity representation is broadly evenly distributed across staff groups and highlighting any notable variations. Present the output as a short professional paragraph followed by 3–4 key takeaway bullet points suitable for inclusion in a report or presentation.*
+- *Act as an NHS Barts Health administrator reviewing workforce equality data. Analyse the data provided below showing the distribution of ethnicities across staff groups and provide a concise summary of the overall pattern, focusing on whether ethnicity representation is broadly evenly distributed across staff groups and highlighting any notable variations. Present the output as a short professional paragraph followed by 3–4 key takeaway bullet points suitable for inclusion in a report or presentation.*
+
+- *Copy in the pivot table from Excel*
+
+- *Hit enter*
+
+Use of CoPilot in PowerPoint or Excel can be a game changer when it comes to producing a report or slide deck really quickly.
+
+What CoPilot usually gets right is the **structure** and **coverage** in response to the prompt you gave. 
+
+Though sometimes the formatting, especially with PowerPoint almost always needs some manual correction. 
+
+You can try to write another prompt but generally, you'll find yourself chasing your own tail getting AI to fix an AI mistake. 
+
+Where you're most likely to use CoPilot in Word will be:
+
+- Drafting a narrative summary from data like we've done. 
+- Or Rewriting a section for a different tone or audience. Perhaps you've received some copy or data from your line mananger and you want to copy that data into word and share it with your team. 
+- Lastly, you'll get good use if you want to summarise a long document and extract any key points or action items. 
+
+### Hands On
+
+I want to give you a go at doing something similar. 
+
+I'm interested to see a breakdown regarding the average age of the apprentices from each site. 
+
+This isn't a test you on your ability to create pivot tables. 
+
+I'd recommend a:
+- row of *site*
+- a value of the average age
+
+I'd also recommend you do two more things, round the average age to 0 decimal places and also look at the *count of name* for those values. 
+
+It'll show that some sites have far more people than others. 
+
+With this information I want you to do a few things.
+
+- Use CoPilot to recommend a chart type to display the **site** and **avergae** age information
+  - Create that chart and clean it the way you think is best
+- Use CoPilot to generate a slide deck with 3 slides
+
+1. For the chart you choose
+2. For 3 key insights
+3. An explanation for the outliers
+
+### End of Hands On
+
+I hope you enjoyed that.
+
+The most time-consuming part of producing a report or presentation isn't the analysis - but the drafting, writing, structuring of slides. 
+
+The output you got from CoPilot should be that first draft. 
+
+CoPilot won't understand Barts Health's reporting conventions, the specific context behind the numbers, nor the preferences and priorities of the stakeholder receiving the output.
+
+What CoPilot will do is created a plausable Word Document or Slidedeck but it'll often miss the specific finding or takeaway with makes a report worth reading. 
+
+So treat CoPilot as your starting point rather than the endpoint. 
