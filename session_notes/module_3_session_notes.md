@@ -500,15 +500,29 @@ I've asked Simon and another colleague of mine to have a scripted conversation a
 
 Equally if this was a teams video meeting, we could enable transcription to generate this text.
 
-Based on a chat or transcript we can use CoPilot to summarise meeting notes or:
+I'm playing the role of the **Workforce Development Lead**, Simon is the **Apprenticeship Programme Mananger** and Jake is the **Head of Education and Training**
+
+Our chat generally revolves around the performance of the different sites.
+
+Based on this chat or transcript we can use CoPilot to summarise meeting notes or:
 - key discussion points
 - decisions made
 - actions agreed
 - or any owners and deadlines identified 
 
-# CONTINUE
-*Use fake chat and CoPilot to output a summary of discussion and any actions worth taking*
+Let's summarise this Teams chat
 
+- *Open CoPilot in teams*
+
+<img src="../trainer_images/7.png">
+
+Then just our prompt:
+
+- *"Act as a Workforce Development Lead at Barts Health NHS Trust. Review the following meeting notes and provide a concise professional summary of the key discussion points, decisions made, and any actions arising from the meeting. Present the output as a short executive summary paragraph, followed by bullet-pointed key discussion themes and an action log table showing the action, owner (if identified), and next steps."*
+
+Again, it's worth us looking through the output because we can't gauruntee any actions derived do correspond with the right teams. 
+
+- *Leave teams open*
 
 ### Outlook
 
@@ -521,10 +535,26 @@ Moving into Outlook we can use CoPilot for three main uses.
 
 3. And suggesting a reply to an email, which can be then edited for tone and accuracy. 
 
-I'll quickly demo this by using the summary I generated from the teams conversation and use CoPilot again to write a quick email to my team to try and get some insights from the data. 
+I'll quickly demo this by using the summary we generated from the teams conversation and use CoPilot again to write a quick email to my team to try and get some insights from the data. 
 
-# CONTINUE
+<img src="../trainer_images/8.png">
 
 *Use Teams chat summery to create an email prompt to ask team to try and get some insights from the data*
 
-<img src="../trainer_images/7.png">
+<img src="../trainer_images/9.png">
+
+So I'll write a little prompt in Outlook
+
+- *"Act as me, the Workforce Development Lead at Barts Health NHS Trust. Using the meeting summary below, draft a professional follow-up email to the relevant stakeholders. Summarise the key discussion points, provide context for any decisions made, and clearly outline the agreed actions, owners, and next steps. Use a concise, collaborative NHS tone and ensure recipients understand what is required of them and why the actions are being taken.*
+
+*Meeting summary:
+[PASTE SUMMARY HERE]"*
+
+
+- *Run prompt*
+
+We again may get outputs helping is to make the email more concise or add certain elements. 
+
+Either way, once you're provided your prompts, review the output and send the email. 
+
+## Block 4 - Validating Outputs & Building Repeatable Workflows
