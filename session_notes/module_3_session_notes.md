@@ -480,3 +480,51 @@ CoPilot won't understand Barts Health's reporting conventions, the specific cont
 What CoPilot will do is created a plausable Word Document or Slidedeck but it'll often miss the specific finding or takeaway with makes a report worth reading. 
 
 So treat CoPilot as your starting point rather than the endpoint. 
+
+
+## Block 3 - CoPilot Across Teams & Outlook 
+
+We can deloy CoPilot equally in other Microsoft 365 products like Teams and Outlook. 
+
+I won't speak on this for too long but there's still value to be hard.
+
+### Teams
+
+I've taken the liberty of creating a fake teams conversation. 
+
+Imagine you've had a meeting and you've got a conversation thread. 
+
+I've asked Simon and another colleague of mine to have a scripted conversation about how apprentices are performing across several sites. 
+
+- *Open teams chat* **Barts Health**
+
+Equally if this was a teams video meeting, we could enable transcription to generate this text.
+
+Based on a chat or transcript we can use CoPilot to summarise meeting notes or:
+- key discussion points
+- decisions made
+- actions agreed
+- or any owners and deadlines identified 
+
+# CONTINUE
+*Use fake chat and CoPilot to output a summary of discussion and any actions worth taking*
+
+
+### Outlook
+
+Moving into Outlook we can use CoPilot for three main uses.
+
+1. To draft an email from a prompt
+  - *"Draft an email to my team summarising October's mandatory training completion figures and asking for a response on any teams below 80% by Friday"*
+
+2. Or we can use CoPilot to summarise a long email thread to extract the current status or any outstanding actions without reading every message
+
+3. And suggesting a reply to an email, which can be then edited for tone and accuracy. 
+
+I'll quickly demo this by using the summary I generated from the teams conversation and use CoPilot again to write a quick email to my team to try and get some insights from the data. 
+
+# CONTINUE
+
+*Use Teams chat summery to create an email prompt to ask team to try and get some insights from the data*
+
+<img src="../trainer_images/7.png">
