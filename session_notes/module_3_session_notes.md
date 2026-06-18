@@ -558,3 +558,75 @@ We again may get outputs helping is to make the email more concise or add certai
 Either way, once you're provided your prompts, review the output and send the email. 
 
 ## Block 4 - Validating Outputs & Building Repeatable Workflows
+
+We're nearly done with this module and I want to conclude with a structured checklist to validate any CoPilot output before it is used or shared:
+
+- `Slide 4`
+
+As we've mentioned AI can and does make mistakes and I know from personal experience it's possible to take whatever CoPilot gives you as fact.
+
+On the screen, you'll see 5 different checklists to make before sharing anything created from CoPilot. 
+
+1. **Accuracy**: it's important to check if any numbers, names or pieces of data are correct. 
+
+In my example of sharing the actions from the Teams chat. I'll cross reference one or two just to make sure they're valid.
+
+2. In regards to **Completeness**, again, as the human in the conversation with the **Apprenticeship Programme Mananger** and **Head of Education and Training**, I should have a good understanding of the objectives we aligned on. Giving it a once over to make sure everything is encapsulated.
+
+3. For **Tone and register**, basically, will any messaging, again in an email or PowerPoint, land correctly with the intended audience. 
+
+4. Then we have the **specificity** for Barts health.
+
+Throughout the course I've been a little interchangale between describing the apprentices as *learners, students and apprentices*. You'll know specifically what they ought to be referred to as. 
+
+5. Finally **Actionability**, if there's something a colleague needs to do, make sure that CoPilot does clearly ask them to do it. 
+
+The last thing anyone wants is to reach a deadline and a task hasn't been done because what you copied from CoPilot hasn't clearly asked them to do it. 
+
+### CoPilot Task Value
+
+It's also important to understand which tasks are **high-value**, which are **high-risk** and those which are **low-value**.
+
+- `Slide 5`
+
+#### High-Value
+
+Tasks which save you a lot of time and are relatively AI safe are:
+- drafting emails or copy
+- summarising information 
+- generating formula syntax 
+- reformatting
+- or rewritting copy for a different audiance 
+
+The reason being is most of these tasks use pre-existing information or naturally aligns with what Large Language Models are best suited to, drafting emails or text.
+
+Because CoPilot is a Microsoft tool again they're well equipped to return excel formulas. We've only covered a few, if there's something you want to do in excel and you don't know the formula, have confidence to ask CoPilot and you'll likely save a lot of time instead of reading lots of documentation. 
+
+
+#### High-Risk
+
+High risk uses of CoPilot on the other hand really revolve around anything to do with specific information.
+
+If we're pulling in data for a specific person, or date, not to say CoPilot will often reference the wrong individual but if it does, the cost can be much higher. 
+
+If I were to prompt CoPilot to pull information across several spreadsheets about a specific apprentice, to mitigate that risk, you'll need to see where CoPilot has pulled that data and check to see it's accuracy. 
+
+Additionally if there's any contracts or policy documents apprentices or staff need to read and sign - it's a good habit to either find the files yourself or verify that CoPilot has accessed the correct document before sending anything out.
+
+This isn't to say that CoPilot is bad, it can make mistakes but so can we. 
+
+If I'm trying to pull information on an apprentice called 'Sophia', 'Layla' or 'Muhammed', I know these names all have a few variations in terms of spelling. 
+
+Then a simple typo can return the wrong persons information, if I don't check and verify then that problem can cascade. 
+
+
+#### Low Value
+
+Low value tasks simply are when the manual version takes less time than writing a good prompt in CoPilot and then reviewing the output. 
+
+If I know a students records are in a certain file and all I need to see it the status of their apprenticeship, it's easier and safer for me to go into the file and find the entry rather than use CoPilot. 
+
+You all will a large number of tasks you need to think about on any given day and it's worth saying, for each of those tasks whether it's **high-value**, **high-risk** and **low value** won't always be obvious.
+
+The more you use CoPilot, see where it struggles and excels is part of the learning and you'll naturally make much more efficinet use of the tools. 
+
