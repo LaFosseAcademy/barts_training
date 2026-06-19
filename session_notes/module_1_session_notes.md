@@ -107,7 +107,7 @@ The whole point of SharePoint is to share files, conversations across a team whi
 
 Can I ask you all to:
 
-1. click into *<insert hopistal currently located>* and then in the top right hand side, you'll see a green *Create or upload* button. 
+1. click into the folder of the hospital you're predominatly based and then in the top right hand side, you'll see a green *Create or upload* button. 
 
 2. Could create a folder and name that folder your first and last name. 
 
