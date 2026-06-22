@@ -9,7 +9,7 @@
 ## Pre-Session Setup
 
 - Load Slidee: barts_module_1_2
-
+- Check attendance link https://url.uk.m.mimecastprotect.com/s/IqjbCZWJQs57XvVhPuwcBRfIZ?domain=admin.classattendancetracker.com
 
 ## Training
 
