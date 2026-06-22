@@ -9,7 +9,7 @@
 ## Pre-Session Setup
 
 - Load Slidee: barts_module_1_2
-
+- Check attendance link https://url.uk.m.mimecastprotect.com/s/IqjbCZWJQs57XvVhPuwcBRfIZ?domain=admin.classattendancetracker.com
 
 ## Training
 
@@ -21,9 +21,9 @@ Good morning everyone, good to be with you all today.
 
 My name's Emile and I'm a Senior Trainer for LaFosse. My role at LaFosse is a technical trainer, whether that's building websites, deploying software onto servers in the cloud or exploring databases and the data they contain. 
 
-Susana who I trust you all know, and Simon from my team have been working on a plan for some training, which we've put together. Fundamentally the training revovles around the data lifecycle. 
+Susana who I trust you all know, and Simon from my team have been working on a plan for some training, which we've put together. Fundamentally the training revolves around the data lifecycle. We've designed two sessions with the aim of making you more confident with the tools and datasets you already use and, in the second session, with AI-tooling that you might be less familiar with.
 
-From when an email lands in your inbox with an attatchment about attendance records, to understanding that data, getting the relevant insights out of it and then taking action. 
+Essentially, we'll be working on improving processes - from when an email lands in your inbox with an attatchment about attendance records, to understanding that data, getting the relevant insights out of it and then taking action. 
 
 ### Training Overview
 
@@ -60,6 +60,13 @@ That's available to you in the SharePoint you've been invited to but we can dist
 
 We'll also be recording the training so you'll have access to revisit this session at a later date if there's anything specific you want to recap.
 
+Effectively, this morning we'll be attempting to answer 4 key questions:
+
+1. how should I manually interact with raw data in order to extract information?
+2. how can I pull information from several sources to getter wider context to data?
+3. how can I summarise large datasets when data is evolving and the insight I need is frequently changing?
+4. how can I access the right information and choose the right visualisation to convey the information needed?
+
 ### The Training
 
 Ok, let's get into it then! 
@@ -81,13 +88,13 @@ We start with:
   - Essentially opening the data or spreadsheet
   - This is the phase where we'll be starting our training today
 - Then **Cleaning**
-  - We rarely get perfect data on arrival, so there's a profress of fixing any errors, blanks and any formatting requirements 
+  - We rarely get perfect data on arrival, so there's a process of fixing any errors, blanks and any formatting requirements 
 - **Analysis**
   - Analysis is actually defining different formulas in Excel and creating LookUps or Pivot Tables to bring relevant information together
 - **Visualisation** is where we'll conclude today
-  - Relatively straight forward but creating charts or illustrations about our data
+  - Relatively straightforward but creating charts or illustrations about our data
 - Then in our next session we'll look at **Communication**
-  - Creating slides, reports... essentially distribtuing the insights more widely
+  - Creating slides, reports... essentially distributing the insights more widely
 - And finishing with **Action**
   - What do we actually do with that insights we have
 
@@ -96,7 +103,7 @@ Those last two parts we'll tackle more comprehensively in Modules 3 and 4.
 
 ## Block 1 - Getting Data into Excel Online
 
-So before we get started we need some data. 
+So before we get started we need some data. Initially remember we're just focussing on **how you should manually interact with raw data in order to extract information.**
 
 You should have been invited to a SharePoint, I'll share the link on Teams as well just incase the invite has got lost. 
 
@@ -118,7 +125,7 @@ So for me, I'll go into *Trainers* and just create a folder called *Emile Sherro
 
 ### The problem 
 
-Most of the problems we have with data start before we've even opened a file. Data arrives from multiple sources and exported to a place like SharePoint in multiple formats from different teams.
+Most of the problems we have with data start before we've even opened a file. Data arrives from multiple sources and is exported to a place like SharePoint in multiple formats from different teams.
 
 In the files we have to work with I think we have a good example of this. In SharePoint you'll notice two files. 
 
@@ -148,7 +155,7 @@ Based on the worksheet title:
 
 Then some information about how long they'd be expected to spend on their placements. 
 
-The column headings I hope are fairly self explanitory
+The column headings I hope are fairly self explanatory
 
 - **Trust**
 - **First name**
@@ -158,7 +165,7 @@ The column headings I hope are fairly self explanitory
 - Under **5 Jan- 22Feb 26** looks like the Allocated ward/department
 - **LL** I believe to be the Link Lecturer 
 
-I appreciate it may sound obvious but having an initial understanding of the data, what it contains is always the first thing we should do. 
+I appreciate it may sound obvious but having an initial understanding of the data and what it contains is always the first thing we should do. 
 
 Without that insight we can't start to identify any issues with the health of the data and then try to resolve them before we go any further.
 
@@ -190,7 +197,7 @@ If we go back to the spreadsheet we can see there's a few anomalies with the dat
 
  With 35 apprentices in total, 4 of which don't have the data regarding their placement location, that represents just over 11% of the entries. 
 
- Which is quite a large scew if this was an area we were running our analysis on. 
+ Which is quite a large skew if this was an area we were running our analysis on. 
 
  ### Cleaning Data
 
@@ -208,7 +215,7 @@ If we go back to the spreadsheet we can see there's a few anomalies with the dat
 
 With any data, where we gather that information from may lead to a few vulnerabilities. 
 
-It's not uncommon to see terminals outsite training spaces, where users type there name to sign in or register. If there's any user input when collecting data, there's always a risk that the input may contain issues. 
+It's not uncommon to see terminals outsite training spaces, where users type their name to sign in or register. If there's any user input when collecting data, there's always a risk that the input may contain issues. 
 
 Generally speaking those issues look like spelling mistakes or whitespace before or after a name is written.
 
@@ -227,7 +234,7 @@ We should hopefully see **4** returned to us.
 
 `COUNTIF` is the formula and we have two inputs which are seperated by a comma. Technically we ought to refer to these as **arguments**
 
-If I click into the parenthesies of the formula we can see the syntax or how the formula should be used.
+If I click into the parentheses of the formula we can see the syntax or how the formula should be used.
 
 We have a:
 - **Description**, "counts the number of cells within a range that meet the given condition"
@@ -311,7 +318,7 @@ It's a very similar process. Create a new column of cleaned data and then overwr
 =PROPER()
 ```
 
-If I click inside the parenthesies we can see the syntax again: "Converts a text string to proper case", basically the first letter in each word becomes uppercase with the other letters lowercase. 
+If I click inside the parentheses we can see the syntax again: "Converts a text string to proper case", basically the first letter in each word becomes uppercase with the other letters lowercase. 
 
 We only have one argument to pass, the text. All I need to do is refer to the cell which holds the text I'm interested in. 
 
@@ -488,7 +495,7 @@ With formulas we can ask:
 
 `COUNTIF` in particular are the workhoreses of administrative reporting. 
 
-Another forumla which is probably worth remembering is `IFERROR`, the main reason is because, if a formula displays an error, often to a senior stakeholder, that reads as carelessness, even if the underlying issue is the data that was shared with you by that stakeholder. 
+Another formula which is probably worth remembering is `IFERROR`, the main reason is because, if a formula displays an error, often to a senior stakeholder, that reads as carelessness, even if the underlying issue is the data that was shared with you by that stakeholder. 
 
 We can wrap formulas in a `IFERROR`, which is a small habit but improves the credibility of a report significantly. 
 
@@ -528,7 +535,7 @@ For the number of students, we want to target, or count the number of non-empty 
 
 I may not know the formula or if there even is a formula to do this off the top of my head but let me Google it.
 
-- *Open a new tab and Googel search: 'excel formula to count non empty cells in a column'*
+- *Open a new tab and Google search: 'excel formula to count non empty cells in a column'*
 - *Open Microsoft link*
 
 So it's saying the **Count A** formula. Let's take a look.
@@ -549,7 +556,7 @@ Equally, we can see in the argument explanation, it says "value1,value2... are 1
 
 I know that the information about the total number of learners is on a seperate sheet, the **'Learner tracker'** starting at B5 and going all the way until B210. 
 
-For me to reference data which lives on a seperate sheet I need to pass in the name of the sheet in single quotes followed by an exclamation mark.
+For me to reference data which lives on a separate sheet I need to pass in the name of the sheet in single quotes followed by an exclamation mark.
 
 Following the exclamation mark I can write in the cells as normal. 
 
@@ -678,7 +685,7 @@ Let's turn our attention to **Look Ups**, if you've heard of these, it'll most l
 
 Generally, a look up is a process that searches for a specific piece of information in one part of your data and pulls back corresponding values for the same row or column.
 
-It's essentially saying: "Using this value in one place, bring back related information from somewhere else". 
+It's essentially saying: "Using this value in one place, bring back related information from somewhere else" and it's going to help us answer our second question **how can you pull information from several sources to getter wider context to data?**
 
 So in our spreadsheets, as we saw at the very beginning we had data relating to students inside the files:
 
@@ -689,7 +696,7 @@ When you have data which can potentially all fit together but it spans several f
 
 If you don't already have those files open, let's reopen them from our personal folders. 
 
-### Difference between VLOOK and XLOOKUP
+### Difference between VLOOKUP and XLOOKUP
 
 If you've used **VLOOKUPs** before, they work but they're a bit more limited in regards to what they can do:
 
@@ -925,7 +932,7 @@ Most of our learners won't have scored exactly a 0, 40 or 70 so an exact match i
 
 We'll finish this module looking at Pivot Tables.
 
-PivotTables are one of the most powerful tools available to anyone working with tabular data, and also one of the most underused. 
+PivotTables are one of the most powerful tools available to anyone working with tabular data, and also one of the most underused - they're going to help us answer our third question **how can you summarise large datasets when data is evolving and the insight you need is frequently changing?**
 
 The reason most people avoid them is that they look complex and feel unfamiliar. Once you understand the logic and the different fields — rows, columns, values, filters — they become the fastest way to answer a question like "how does this break down by team?" or "what does this look like by month?"
 

@@ -16,7 +16,7 @@
 
 ### Training Overview
 
-We're now moving into Module 2.
+We're now moving into Module 2 where we're trying to answer our final question for the morning **how can you access the right information and choose the right visualisation to convey the information needed?**
 
 This is where data stops being a spreadsheet and starts becoming a message. 
 
@@ -24,7 +24,7 @@ The analytical work we've done so far, cleaning, joining is all about producing 
 
 Now we need to try and make those numbers useful. 
 
-That involves selecting the right visual form, stripping away the noise that obsecures the point we're trying to convey and framing the finding we made that prompts a decision rather than just an observation. 
+That involves selecting the right visual form, stripping away the noise that obscures the point we're trying to convey and framing the finding we made that prompts a decision rather than just an observation. 
 
 The skills here aren't necessarily technical, building charts in Excel takes minutes. 
 
@@ -93,7 +93,7 @@ On the screen we have a breakdown of the number of students in each **Division**
 **ANSWER**
 - Too many segments or divisions
 - Difficult to see the meaning of the chart
-  - Makes us ask further questions
+- Makes us ask further questions
 
 One thing we've not done with this dataset is clean it, which we should do. 
 
@@ -293,3 +293,4 @@ The choice of chart is up to you but also how to access that data initially as w
 You can define your own table and write your own formulas or maybe use a Pivot Table. 
 
 Think about what the data shows and give any visualisation a good title which conveys what the data suggests, once you've uncovered it. 
+
