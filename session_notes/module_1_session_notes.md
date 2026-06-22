@@ -19,17 +19,17 @@
 
 Good morning everyone, good to be with you all today. 
 
-My name's Emile and I'm a Senior Trainer for LaFosse. My role at LaFosse is as a technical trainer, whether that's building websites, deploying software onto servers in the cloud or exploring databases and the data they contain. 
+My name's Emile and I'm a Senior Trainer for LaFosse. My role at LaFosse is a technical trainer, whether that's building websites, deploying software onto servers in the cloud or exploring databases and the data they contain. 
 
-Susana and Simon from my team have been working on a plan for some bespoke training for you which we've put together which will revovle around the data lifecycle. 
+Susana who I trust you all know, and Simon from my team have been working on a plan for some training, which we've put together. Fundamentally the training revovles around the data lifecycle. 
 
-From when an email lands in your inbox with an attatchment about attendance record, to understanding that data and getting the relevant insights out of it. 
+From when an email lands in your inbox with an attatchment about attendance records, to understanding that data, getting the relevant insights out of it and then taking action. 
 
 ### Training Overview
 
 - `Slide 2`
 
-You may already be familiar with the training and how it'll be structured but in case you're not. 
+You may already be familiar with the training and how it's'structured but in case you're not. 
 
 We'll be spending 2 mornings together. 
 
@@ -45,16 +45,18 @@ So:
   - This module is going to focus on the practical skills to get raw information or imperfect data as it may arrive across different systems into a clean and structured file. 
 
 - Module 2
-  - Module 2 is designed to convert that spreadsheet into something more meaningful. We'll discuss selecting the right visual form for the message we're trying to communicate and then stripping away any noise which obscures that message. This is what we'll cover over the course of this morning, then we'll pick up again for Module 3 and 4.
+  - Module 2 is designed to convert that spreadsheet into something more meaningful. We'll discuss selecting the right chart for the message we're trying to communicate and then stripping away any noise which obscures that message. This is what we'll cover over the course of this morning, then we'll pick up again for Module 3 and 4.
 
 - Module 3 & 4
-  - I wont delve too deeply into those modules right now but they can be summarised by taking the learnings we hopefully achieve this morning and then making that process more efficient using CoPilot. We'll then conclude with a little example which takes us all the way through the process. 
+  - I wont delve too deeply into those modules right now but they can be summarised by taking the learnings we hopefully achieve this morning and then making that process more efficient using CoPilot. We'll then conclude with a little exercise which takes us all the way through that process. 
 
 ### How to follow the training
 
-It's my recommendation that during the training you ask questions as we go along. You can make notes if you wish but I've developed a cheatsheet for each module we go through which summarises the main takeaways. 
+It's my recommendation that during the training you ask questions as we go along. One of the things I say with all the training I deliver, your goal isn't to know everything but to be able to find out how to do different things and when we introduce CoPilot in the next session, that'll make life a lot easier. 
 
-I'll distribute those at the end of the training. 
+You can make notes if you wish but I've developed a cheatsheet for each module, which summarises the main takeaways. 
+
+That's available to you in the SharePoint you've been invited to but we can distribute those as well. 
 
 We'll also be recording the training so you'll have access to revisit this session at a later date if there's anything specific you want to recap.
 
@@ -64,31 +66,30 @@ Ok, let's get into it then!
 
 #### The Data Lifecycle
 
-When we discuss data, often we're inadvetently referring to the Data Lifecycle.
+When we discuss data, often we're inadvetently referring to a point along the Data Lifecycle.
 
 - `Slide 4`
 
-I hope you can see but it describes the journey data takes from it's origin through to action. 
+I hope you can see but it describes the journey data takes from it's origin through to an eventual action. 
 
 We start with:
-- Collection
+- **Collection**
   - Where we gather raw data from different source systems
-- Storage
+- **Storage**
   - Where that data exists, which could be SharePoint, OneDrive or downloaded directly onto your computers
-- Access
+- Then we progress into **Access**
   - Essentially opening the data or spreadsheet
   - This is the phase where we'll be starting our training today
-- Cleaning
-  - Fixing errors, blanks and any formatting requirements 
-- Analysis
-  - Actually defining different functions in Excel and creating LookUps or Pivot Tables
-- Visualisation
+- Then **Cleaning**
+  - We rarely get perfect data on arrival, so there's a profress of fixing any errors, blanks and any formatting requirements 
+- **Analysis**
+  - Analysis is actually defining different formulas in Excel and creating LookUps or Pivot Tables to bring relevant information together
+- **Visualisation** is where we'll conclude today
   - Relatively straight forward but creating charts or illustrations about our data
-  - This is hopefully the endpoint of where we'll get to today
-- Communication
+- Then in our next session we'll look at **Communication**
   - Creating slides, reports... essentially distribtuing the insights more widely
-- Action
-  - Then what do we actually do with that insights we have
+- And finishing with **Action**
+  - What do we actually do with that insights we have
 
 Those last two parts we'll tackle more comprehensively in Modules 3 and 4. 
 
@@ -103,11 +104,13 @@ You should have been invited to a SharePoint, I'll share the link on Teams as we
 
 If you click into *Documents* on the left hand side you'll see a series of mock spreadsheets we'll be working from. 
 
-The whole point of SharePoint is to share files, conversations across a team which is fine but for the purpose of the training what I've done is created some folders for the different groups we'll have recieving this training. 
+The whole point of SharePoint is to share files or conversations within a team which is fine.
+
+For the purpose of the training what I've done is created two folders for the different locations we'll be delivering this training.
 
 Can I ask you all to:
 
-1. click into the folder of the hospital you're predominatly based and then in the top right hand side, you'll see a green *Create or upload* button. 
+1. Click into the folder for our current location and then in the top right hand side, you'll see a green *Create or upload* button. 
 
 2. Could create a folder and name that folder your first and last name. 
 
@@ -115,26 +118,28 @@ So for me, I'll go into *Trainers* and just create a folder called *Emile Sherro
 
 ### The problem 
 
-Most of the problems we have with data start before we've even opened a file. Data arrives from multiple different systems and exported to a place like SharePoint in multiple formats from different teams.
+Most of the problems we have with data start before we've even opened a file. Data arrives from multiple sources and exported to a place like SharePoint in multiple formats from different teams.
 
-In the mock data I think we have a good example of this. In SharePoint you'll notice two files. 
+In the files we have to work with I think we have a good example of this. In SharePoint you'll notice two files. 
 
 - 0923 BSc Student allocations (LSBU-Barts Health)
 - student allocations
 
-Before we open these up and potentially edit them, can I ask you to select both of these files from the Documents window. 
+Before we open these up to edit them, can I ask you to select both of these files from the Documents window - there should be a circular radio button on the left hand side of each file.
 
-Then on the toolbar at the top click on Copy To, once you've done that just navigate to where you created the folder with your name and copy to that location. 
+Then on the toolbar at the top click on 'Copy To', once you've done that just navigate to where you created the folder with your name and copy to that location. 
 
-Again this isn't something that we'd normally need to do but I'm just making sure we're not all potentially editing the same file directly. 
+
+Whether this is something you need to do beyond the training is quite subjective. If there's information which needs to be protected then it's never a bad idea copy that file to work on it. However if you end up having 10 copies of the same file then as you can imagine, life gets more complicated organising everything. 
+
 
 ### Accessing Data
 
-So once you've done that, just navigate in SharePoint to your named folder and let's open up both the two files we copied over. 
+So once you've done that, just navigate in SharePoint to your named folder and let's open up both of files we copied over. 
 
-The first file: 0923 BSc Student allocations (LSBU-Barts Health)
+I'll start by looking at: 0923 BSc Student allocations (LSBU-Barts Health)
 
-You likely to be better equipped in reading this spreadsheet better than myself but it looks like a student placement allocation spreadsheet to allocate London South Bank University students into clinical placements. 
+It's likely you're better equipped to read this spreadsheet than myself but it looks like a student placement allocation spreadsheet for London South Bank University students and their clinical placements. 
 
 Based on the worksheet title:
 - **0923 BSc** likely a student cohort who started September 2023
@@ -153,13 +158,13 @@ The column headings I hope are fairly self explanitory
 - Under **5 Jan- 22Feb 26** looks like the Allocated ward/department
 - **LL** I believe to be the Link Lecturer 
 
-I appreciate it may sound very obvious but having an initial understanding of the data, what it contains is always the first thing we need to do. 
+I appreciate it may sound obvious but having an initial understanding of the data, what it contains is always the first thing we should do. 
 
 Without that insight we can't start to identify any issues with the health of the data and then try to resolve them before we go any further.
 
 - `Slide 4`
 
-If we think back to the data life cycle, this is the **Access** stage. When we open a file we understand it and assess it's quality.
+If we think back to the data life cycle, this is the **Access** stage. When we first open a file, we need to understand it and assess it's quality before we can start to clean or analyse it.
 
 ## Block 2 - Cleaning & Structuring Data
 
@@ -167,51 +172,72 @@ If we go back to the spreadsheet we can see there's a few anomalies with the dat
 
 - On row 21: We're missing data about the **Trust**, **Placement Dates** then the **Allocated ward and department** info.
 
-- Between rows 36 and 39 we're missing data on the **Allocated ward and department**
+- Between rows 36 and 39 we're missing data on the **Link Lecturer**
 
 - Row 40 we're missing trust information with a few other things
 
 - Then generally throughout the spreadsheet it looks like there's varying ways information has been inputted. 
-  - row 10 the trust is Barts-contin
-  - row 11 it's Barts-ext degree
-  - 12 it's just BSc
-  - 20 it's *from 0922* with a lower case *f*
-  - rows 30 & 31 it's *From 0922* with an upper case *F*
-  - row 35 the trust name is *Other*
+  - On row 10 the trust is Barts-contin
+  - On row 11 it's Barts-ext degree
+  - On row 12 it's just BSc
+  - On row 20 it's *from 0922* with a lower case *f*
+  - Then on rows 30 & 31 it's *From 0922* with an upper case *F*
+  - Finally row 35 the trust name is *Other*
  
- You'll have an understanding about the insights you want to collect from these types of reports but we can easily indentify that if we wanted to understand how many students were doing their placements in the Community. 
+ You'll have an understanding about the insights you generally want to collect from these types of reports but we can easily indentify that if we wanted to understand how many students were doing their placements in the Community, this spreadsheet alone couldn't answer that question with 100% accuracy. 
 
- We've got the 4 between rows 36 and 39. We could guess Kendall Martinez on row 35 is part of the community placement or that Quinn Gonzalez is as well but they would just be assumptions.
+ We've got the 4 apprentices between rows 36 and 39. We could guess Kendall Martinez on row 35 is part of the community placement or that Quinn Gonzalez at the bottom is as well but they would just be assumptions.
 
- With 35 students, 4 of which don't have the data regarding their placement location, that represents just over 11% of the entries. 
+ With 35 apprentices in total, 4 of which don't have the data regarding their placement location, that represents just over 11% of the entries. 
+
+ Which is quite a large scew if this was an area we were running our analysis on. 
 
  ### Cleaning Data
+
+ At this point we need to move into the next stage of the data lifecycle and clean our data. 
 
  #### White Space
 
  Generally speaking when we clean data the first thing we do is observe the issues with the data and where they are, which we have done.
 
- - There's multiple casings
+ - There's multiple casings of trust information in column A. 
  - Missing values
- - Hard to interprete values
+ - There's also hard to interprete values we saw in column A
 
-If there's any user input, maybe someone arrives at the training center at checks in one an iPad or a similar device they may accidentally input their name with a leading or trailing whitespace. 
 
-If I'm writing a simple query to see how many students are in a community placement I can write a simple function in an empty cell. 
+
+With any data, where we gather that information from may lead to a few vulnerabilities. 
+
+It's not uncommon to see terminals outsite training spaces, where users type there name to sign in or register. If there's any user input when collecting data, there's always a risk that the input may contain issues. 
+
+Generally speaking those issues look like spelling mistakes or whitespace before or after a name is written.
+
+If I'm writing a simple query to see how many students are in a community placement I can write a formula to do so. 
 
 - *Click into cell K42 and type*: "Number of students in community"
 - *Click into cell L42 and type*
 
 ```xlsx
-=COUNTIF(L36:L39,"Community")
+=COUNTIF(L6:L40,"Community")
 ```
 
-So `COUNTIF` is the function and we have two arguments which are seperated by a comma. 
+- *Press Enter*
+
+We should hopefully see **4** returned to us. 
+
+`COUNTIF` is the formula and we have two inputs which are seperated by a comma. Technically we ought to refer to these as **arguments**
+
+If I click into the parenthesies of the formula we can see the syntax or how the formula should be used.
+
+We have a:
+- **Description**, "counts the number of cells within a range that meet the given condition"
+
+Then our two arguments
 
 1. The range of cells we're assessing
-2. The condition we're checking
+2. The condition we're checking or the criteria
 
-As we can see we get back 4. 
+Generally speaking, we should be a little untrustworthy about our data, especially if we know it arrived from a place where there's a lot of human or manual input.
 
 If I introduce a trailing white space to one of the cells with "Community", then we get 3 instead.
 
@@ -220,40 +246,74 @@ If I introduce a trailing white space to one of the cells with "Community", then
 
 So if there's any pieces of data which are typed in manually by a human it's always good to trim any leading or trailing white space. 
 
-There's a few ways to clean it, eventually we'll get CoPilot AI to do this for us but I'll write a new function.
+There's a few ways to clean it, hopefully we'll get CoPilot to do this for us in time, but I'll write a new function.
+
+What I'll do is go through a process of creating new "cleaned data" then replacing old data. 
 
 - *Click into cell S6*
+
+```xlsx
+=TRIM()
+```
+
+If I click inside the formula again, we can see the syntax of the formula
+
+- **Description**: removes all spaces from a text string expect for single spaces between words
+- It also takes one argument, the **text**
+
+I'm going to add an extra layer to this and nest another formula inside the parenthesies of the **trim()**
+
+```xlsx
+=TRIM(CLEAN())
+```
+
+If I click inside the parenthesies related to **Clean()** we can see in the description, it says: "Removes all nonprintable characters from text"
+
+If I were to press tab, inside an excel cell, that would be a non-printable character or if I copied over some information from a Word Document over several lines, that would contain what's called a "line break".
+
+Both of these are harmless if we're just trying to read data directly from a spreadsheet but they can break formulas when we start to analyse the data at a later stage.
+
+Let me provide a cell to perform these two formulas on. 
 
 ```xlsx
 =TRIM(CLEAN(L6))
 ```
 
-This is just nesting two functions together.
+When I press Enter or Escape, Excel will first perform the Clean formula which will resolve in a certain value. Once that's complete excel will then perform the Trim. 
 
-1. First, we clean the cell which removes any hidden formatting codes
-2. Then we TRIM which removes any leading or trailing whitespace
+All I'll do now is drag down or "Auto Fill" for every entry in this column.
 
-All I'll do next is drag down or "Auto Fill" for every entry in this column.
+The result should be a cleaned column of data, which we can trust doesn't have any hidden pieces of formatting or white space.
 
-That's are cleaned data. 
+Now I just want to overwrite the original column of data.
 
-If I highlight all of it and then copy it, I can do to the original column *L6* and do a "Paste Special" which essentially let's me choose if I want to paste the formulas, values or the styling with formatting. 
+If I highlight column S then copy it, I can go to the original column *L6* and do a "Paste Special" which essentially let's me choose if I want to paste the formulas, values or the styling with formatting. 
 
 I'll choose "Values Only" and it'll overwrite our original values with the clean ones. 
 
-Then we'll just delete the data we created in column S.
+Finally we'll just need to delete the data we created in column S.
 
-Hopefully we can see our **countif** function is now correctly showing 4. 
+Hopefully we can see our **countif** formula is now correctly showing 4. 
+
+This is something we could potentially do for all our text columns, but for sake of time we'll move onto other types of cleaning we can do. 
 
 #### Standardise Casing
 
-We noticed in our **Trust** column that the casing wasn't accurate on Row 20 and then Row 30 and 31. 
+We noticed in our **Trust** column, column A, that the casing wasn't consistent on Row 20 and then Row 30 and 31. 
 
-Now that we've removed any problematic white space, generally this is what we'd do next. 
+Once we've gone through the process of removing any problematic white space, generally this is what we'd want do next. 
 
-It's a very similar process. 
+It's a very similar process. Create a new column of cleaned data and then overwrite the original column.  
 
 - *In cell S6 write:*
+
+```xlsx
+=PROPER()
+```
+
+If I click inside the parenthesies we can see the syntax again: "Converts a text string to proper case", basically the first letter in each word becomes uppercase with the other letters lowercase. 
+
+We only have one argument to pass, the text. All I need to do is refer to the cell which holds the text I'm interested in. 
 
 ```xlsx
 =PROPER(A6)
@@ -261,20 +321,40 @@ It's a very similar process.
 
 - *Then Auto Fill*
 
-I'll copy the values and do another Special Paste into the original row. Then we can delete *column S* again. 
+I'll just copy these values and do another Special Paste into the original row. Then we can delete *column S* again. 
 
-As well as the *PROPER* function which will capitalise the first character of each new letter we can also use:
+As well as the *PROPER* function which will capitalise the first character of each new word we can also use:
 - *LOWER()* which is useful for emails
 - *UPPER()* which you may use with PostCodes
 
-Most functions in excel actually aren't case sensetive but for data presentation and professionalism, it's not a step to miss out. 
+Most functions in excel actually aren't case sensetive but for data presentation and professionalism, it's a good step to include. 
+
+#### Challenge
+
+I'd like you to have a quick go yourself. 
+
+In column J we have the **student emails**, again this could be the type of data each individual student as manually entered and we want to make sure it's cleaned.
+
+The challenge is to overwrite this data with a cleaned version, and I want you to combine three different formulas together.
+
+1. Clean - to remove those unprintable values
+2. Trim - to remove white space
+3. Lower - to ensure all text is in lower case
+
+#### Solution
+
+```xlsx
+=TRIM(CLEAN(LOWER(J6)))
+```
 
 
 #### Standardised Values
 
-Another thing I noticed was in the trust section we had values like: `0923 BSc Barts-Contin` on row 10. 
+Another thing we noticed was in the trust section we had values like: `0923 BSc Barts-Contin` on row 10. 
 
 If there was an insight and the organisation just considered anything beginning with `0923 BSc Barts` to be the same cohort, it'd be difficult to extract this information from the data as it stands. 
+
+So I'm going to clean this, however in this context I'm not going to overwrite any data but add to it.
 
 - *Write in cell S6*:
 
@@ -282,21 +362,28 @@ If there was an insight and the organisation just considered anything beginning 
 =IF()
 ```
 
-If is another built in function which returns a boolean value, essentially either **True or False** based on a condition
+**'If'** is another built in formula, if we check the description it says: "Checks whether a condition is met, returns one value if true and another value if false"
 
-So if I add:
+Then we have three arguments:
+1. The logical test
+2. The value we return to the cell if the test is true
+3. Then the value we return to the cell if the test is false
+
+The test I want to conduct is basically to see whether the information held in the Trust coloumn begins with **"0923 BSc Barts"**, so it'd be True for rows, 6, 7, 8, 9, 10 and 11. 
+
+For that first argument I'm going to nest another formula, a **countif**
+
+
 
 ```xlsx
-=IF(COUNTIF(A6,"0923 BSc*"))
+=IF(COUNTIF(A6,"0923 BSc Barts*"))
 ```
 
-This basically checks if the value in the cell A6 starts with "0923 BSc" regardless of what follows. 
+This basically checks if the value in the cell A6 starts with "0923 BSc Barts" regardless of what may or may not follow. 
 
-We can see in the little pop up it's telling me the arguments the function needs, with our condition, we can provide a value to add if the condition is True or False. 
+In my use case I essentially want a new column of the students original cohort, regardless of if it's currrently a **continued placement** or they've perhaps **extended their degree**
 
-In my use case I essentially want a new column of the students original cohort, regardless of if it's a **continued placement** or they've perhaps **extended their degree**
-
-The second argument is just going to be text wrapped in double quotes.
+The second argument for the **IF** formula is just going to be what we want to return if our Logical Test returned True. 
 
 ```xlsx
 =IF(COUNTIF(A6,"0923 BSc*"),"0923 BSc Barts")
@@ -304,60 +391,71 @@ The second argument is just going to be text wrapped in double quotes.
 
 Then if the condition returns False, I want to leave it as the original value. 
 
+I can just refer to the original value in the cell to achieve this.
+
+So if the logical test returns false, we just use the value we started with. 
+
 ```xlsx
 =IF(COUNTIF(A6,"0923 BSc*"),"0923 BSc Barts",A6)
 ```
 
 - *Then auto fill the other rows*
 
-If we wanted to we could use Column S as our base data for a new column to replace the "From 0922" Values but I'll leave this for now. 
-
-I'm not going to overwrite the original data, in a couple of weeks if someone asks, *"how many students have extended their degree"*, we want to be able to answer them. 
-
-So I'm going to leave this as a new column which will persist. 
+Instead of overwritting column A, I'm going to just define a new column heading. I'll call it "Original cohort"
 
 - *In cell S5 type:* "Original cohort"
 
+The reason I'll leave the original column is because in a couple of weeks if someone asks, *"how many students have extended their placement"*, we want to be able to answer them. 
+
+
 #### Fill or Infer missing values
 
-That'll be our clean data for the time being. As we saw it's quite manual, this is fine, we'll be using CoPilot this time next session to achieve those results which better efficiency. 
+We won't clean the data anymore for the time being.
 
-What's more important is the process of getting to a stage where we can extract information with confidence that a trailing white space for instance won't cause errors. 
+As we saw it's quite manual, and we could have spent more time looking at each individual row. As I said, eventually we'll be using CoPilot next session to hopefully achieve similar results. 
 
-The last thing I want to talk about is the missing entries. Unfortunately, there's not a silver bullet to address these but generally we have three options:
+It's important though to understand what we're doing manually, so when CoPilot takes the reigns we know the actions it's taking. 
+
+The last thing I want to talk about is the missing entries. 
+
+Unfortunately, there's not a silver bullet to address these, but generally we have three options:
 
 1. **Populate missing values**
-  - This is seeing if there's another trusted source of data and adding in that information. 
+  - This is seeing if there's another trusted source of data and adding in that information ourselves. 
 
-  - **Quinn Martin** from row 32 we can see is missing quite a few pieces of information:
+  - On Row 32 we have **Quinn Martin** and we can see it's missing quite a few pieces of information:
     - Trust
     - Placement Dates
     - Where their placement is
 
-  - If I open our second spreadsheet *student allocations*, on row 31, it looks like Quinn is based in A&E at the Royal London Hospital, so I can lift that information and add it to be first spreadsheet.
+  - If I open our second spreadsheet *student allocations*, on row 28, it looks like Quinn is based in A&E at the Royal London Hospital, so I can lift that information and add it to be first spreadsheet.
 
   - *In `0923 BSc Student allocatons (LSBU-Barts Health)` in cell L32 add:* `A&E RLH`
 
-  We want go through all of these due to time restrictions but if you're not guessing, this is fine. 
+  We wont go through all of these due to time restrictions but if you're not guessing, this is fine. 
+
+  You'll understand these spreadsheets better than myself and where the data arrives from. It'll be a judgement call on your part whether the information is reliable or not. 
+  
+  Apprentices may change where they're based so I'm making an assumption. Additionally thoguh we have information from their **LL** or **Link Lecturer** so we could, if the information was important reach out to them to populate this table. 
 
 2. The second way we can fill in values to to **Derive them**
   - This is essentially using logic to fill in missing data.
   - In cell K32, we can see Quinn is missing this data as well.
-  - As I said you'll know these spreadsheets better than myself but it looks like all the Placement dates are the same, so what I'll do is make the assumption and lift the date from other values in the spreadsheet.
+  - As I said, you'll know these spreadsheets better than myself, but it looks like all the Placement dates are the same, so what I'll do is make the assumption and lift the date from other values in the spreadsheet.
 
   - *Copy `5 Jan-22 Feb '26` from another cell into K32*
 
 3. Our final option with missing data is **Leave it blank**
 
-  - I can't from the data I have access to, reasonbly infer the original cohort Quinn was on. 
+  - From the data I have access to, I can't reasonbly infer the original cohort Quinn was on. 
   - An absence of data is better than incorrect data.
-  - Generally speaking at this point you can flag for a review if it's important to fill out those values. 
+  - Generally speaking at this point you can flag for a review if it's important to fill out those values or acknoeledge that you're dealing with imperfect data. 
 
-So: Populate when you know, derive when there's an agreed approach to derive, leave blank if you have neither. 
+So as a general rule: Populate when you know, derive when there's an agreed approach to derive, leave blank if you have neither. 
 
 #### Remove duplicates
 
-After this we could remove duplicates if they existed but following that our data would be ready to be assess. 
+After this we could remove duplicates if they existed but following that our data would be cleaned and ready to be assessed further. 
 
 
 ## Block 3 - Core Formulas for Analysis
@@ -382,7 +480,7 @@ We've seen that they allow us to slice a dataset by a condition without restruct
 
 If you haven't seen this already, you can answer the most common reporting questions with a single formula. 
 
-Another forumla which is probably remembering is `IFERROR`, the main reason is because if a formula displays an error, often to a senior stakeholder, that reads as carelessness, even if the underlying issue is the data that was shared with you by that stakeholder. 
+Another forumla which is probably worth remembering is `IFERROR`, the main reason is because if a formula displays an error, often to a senior stakeholder, that reads as carelessness, even if the underlying issue is the data that was shared with you by that stakeholder. 
 
 We can wrap formulas in a `IFERROR`, which is a small habit but improves the credibility of a report significantly. 
 
@@ -394,8 +492,10 @@ I recommend that before we start defining any formulas we create a new sheet at 
 
 A generic name could be **Dashboard** and what we're doing is having a seperation of concerns. 
 
-- Raw data in a file
-- Dashboard or analysis in another
+- *Name new sheet 'Dashboard'*
+
+- Raw data in one sheet then the
+- Dashboard or analysis in another sheet
 
 Generally just keeps our files a little more organised. 
 
@@ -468,6 +568,7 @@ Now we can do some more interesting analysis.
 
 We're not just counting one thing now but many, so I'll use the `COUNTIFS` formula which let's us pass in a set of conditions. 
 
+*Add here*
 - *In cell C9 add*: `=COUNTIFS('Learner tracker'!G:G,A9,'Learner tracker'!L:L,"Pass")`
 
 So we have 2 conditions, that for each row in coloumn G in the Learner tracker sheet has the value 'RLH' and also in row L has the value "Pass"
@@ -520,14 +621,14 @@ Let's turn our attention to **Look Ups**, you'll most likely have heard about th
 
 Generally, a look up is a process that searches for a specific piece of information in one part of your data and pulls back a corresponding value for the same row or column.
 
-"Find this value in one place, and bring back related information from somewhere else". 
+It's essentially saying: "Find this value in one place, and bring back related information from somewhere else". 
 
 So in our spreadsheets, as we saw at the very beginning we have data relating to students inside the files:
 
 - 0923 BSc Student allocations (LSBU-Barts Health)
 - student allocations
 
-When you data which can potentially all fit together but it does span several folders, think **LOOKUP**. 
+When you have data which can potentially all fit together but it does span several folders, think **LOOKUP**. 
 
 If you don't already, let's reopen those two files from our personal folders. 
 
@@ -563,13 +664,12 @@ What I want to do is basically see their placement progression, from one area to
 In `student allocations` I'm going to create a new sheet called **tracker**
 
 - *Create new sheet called 'tracker'*
-    - *Intentionally omit the final closing parenthesies*
 
 - *In cell A1 type*: `=XLOOKUP(`
 
-We can see the syntax is the first argument is the **lookup_value**
+We can see from the syntax that the first argument is the **lookup_value**
 
-This ought to be a unique value based on the dataset. In our data an **email** would be a good value as two students may share the same name or location.
+This ought to be a unique value based on the dataset. In our data an **email** would be a good value as two students may share the same name or location but sharing the same email seems unlikely.
 
 I'm going to go into `student allocations -> Sheet1` and just copy the student email addresses. 
 
@@ -580,7 +680,7 @@ Let's define a **LOOKUP** again, we know how to reference data in a seperate she
 
 - *In cell B2 add*: `=XLOOKUP(A2,)`
 
-This is what we're using to search for in seperate spreadsheets or files. 
+This is the value we're using to search for in a seperate spreadsheets or files. 
 
 The next argument to the formula is the **lookup_array**. This is asking, where shall I look for to find this email value you passed in as the **lookup_value**. 
 
@@ -839,6 +939,8 @@ I'll remove everything but our **Site** row and **Count of Name** in Values.
 If I then drag **Ethnicity** into Columns, it'll split to group which we've got, **rows** into the ethnicities based in each group. 
 
 - *Add Ethnicity to Columns*
+
+- *Add here*
 
 We can add a further column and similar to our first, within each column we've got, so:
 - Asian
