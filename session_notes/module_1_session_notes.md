@@ -462,11 +462,23 @@ After this we could remove duplicates if they existed but following that our dat
 
 So now that we've got clean data I want to take a look through a few more formulas. 
 
-We've seen so far the **COUNTIF** and **IF** functions and I don't want to pause on this topic for too long. 
+We've seen so far, **COUNTIF**, **IF** and a couple of others.
 
-The main reason being is because I wouldn't expect anyone to know to different arguments and values off the top of their head. Generally, and this is a good use for AI and Google, if there's something you want to do, give it a Google and see if there's a function which can achieve it. This is probably more time efficient than you remembering all of these.
+**ASK**
+- Does anyone want to guess how many there are in total?
 
-More generally though, formulas are how we turn a series of records into insights. A spreadsheet full of rows doesn't really tell us anything on its own. 
+**ANSWER**
+- 450
+
+Practically, the way we can combine multiple formulas together through nesting, there's an almost infinte number of ways we can use these formulas.
+
+I wouldn't expect anyone to know many of them, let alone the different arguments they recieve. 
+
+It's far better to be able to use Google or CoPilot to search for formulas which let you achieve a certain task and then use the syntax Excel givs you to implement it, with the aid of a description and example. 
+
+The reason we have these formulas, more generally though, they are how we turn a series of records into insights. 
+
+A spreadsheet full of rows doesn't really tell us anything on its own. 
 
 With formulas we can ask:
 - how many?
@@ -474,13 +486,9 @@ With formulas we can ask:
 - which category?
 - what proportion?
 
-`COUNTIF` and `SUMIF` in particular are the workhoreses of administrative reporting. 
+`COUNTIF` in particular are the workhoreses of administrative reporting. 
 
-We've seen that they allow us to slice a dataset by a condition without restructuring the data, without filtering and without manual counting. 
-
-If you haven't seen this already, you can answer the most common reporting questions with a single formula. 
-
-Another forumla which is probably worth remembering is `IFERROR`, the main reason is because if a formula displays an error, often to a senior stakeholder, that reads as carelessness, even if the underlying issue is the data that was shared with you by that stakeholder. 
+Another forumla which is probably worth remembering is `IFERROR`, the main reason is because, if a formula displays an error, often to a senior stakeholder, that reads as carelessness, even if the underlying issue is the data that was shared with you by that stakeholder. 
 
 We can wrap formulas in a `IFERROR`, which is a small habit but improves the credibility of a report significantly. 
 
@@ -490,21 +498,22 @@ To show case these I want to use a new spreadsheet: `L&D learner tracker FG`, if
 
 I recommend that before we start defining any formulas we create a new sheet at the bottom. 
 
-A generic name could be **Dashboard** and what we're doing is having a seperation of concerns. 
+I'm going to call it **"Dashboard"** and what I'm doing is trying to have a seperation of concerns. 
 
 - *Name new sheet 'Dashboard'*
 
-- Raw data in one sheet then the
-- Dashboard or analysis in another sheet
+So I have
+- Raw data in one sheet, the 'Learner tracker' then the
+- Dashboard or analysis of that data in another sheet
 
-Generally just keeps our files a little more organised. 
+Broadly, I'm just trying to keep our files a little more organised. 
 
-There's no right name but anything which is descriptive of what it is. 
+There's no right name but anything which is descriptive of what it is works. 
 
-Before I demo a few formulas I'll want to know what insights I'm interested in. 
+Before I demo a few formulas, I'll want to know what insights I'm interested in. 
 
-- I want to know how many students there are
-- How many have: 'passed', 'failed' are in 'progress', or 'not completed'
+- I want to know how many students there are in total
+- And how many have: 'passed', 'failed' are in 'progress', or 'not completed', in relation to the **Outcome** column
 
 So I'll add this header information to my Dashboard. 
 
@@ -517,31 +526,61 @@ So I'll add this header information to my Dashboard.
 
 For the number of students, we want to target, or count the number of non-empty cells in the name column of the 'Learner tracker' sheet. 
 
-That's fine, we can use the `COUNTA` formula. We pass in one argument, the range of information we want to count and it'll tell you how many values are present, ignoring empty cells. 
+I may not know the formula or if there even is a formula to do this off the top of my head but let me Google it.
 
-The only thing I'll need to specify ontop of this is a reference to the sheet.
+- *Open a new tab and Googel search: 'excel formula to count non empty cells in a column'*
+- *Open Microsoft link*
+
+So it's saying the **Count A** formula. Let's take a look.
+
+- *In B1 add*: `=COUNTA()`
+
+If we look at the description:
+
+- "Counts the number of cells in a range that are not empty"
+
+Then for arguments, and it's worth noting that we can see there's two arguments:
+1. value1
+2. value2
+
+Because value2 has square brackets wrapped around it, that means it's optional.
+
+Equally, we can see in the argument explanation, it says "value1,value2... are 1 to 255 arguments" so it looks like it must recieve one argmuent but can take up to 255. 
+
+I know that the information about the total number of learners is on a seperate sheet, the **'Learner tracker'** starting at B5 and going all the way until B210. 
+
+For me to reference data which lives on a seperate sheet I need to pass in the name of the sheet in single quotes followed by an exclamation mark.
+
+Following the exclamation mark I can write in the cells as normal. 
 
 - *In B1 add*: `=COUNTA('Learner tracker'!B5:B210)`
 
-Because 'Learner tracker' has a space in the middle I'll wrap it within single quotes. 
+I should clarify, we actually only need to single quotation marks around the sheet name, because there's a white space in the name. However I'd recommend, just making a habit of additing them when referring the data from seperate sheets. 
 
-I'll use a `CONTIF` for the other segments. 
+#### Challenge
+
+I want you to have a go and try and pull over data relating to the Outcome column in Learner tracker.
+
+Instead of **CountA** use a **CountIF** to count the amount of learners who have an outcome of: Pass / Fail / In progress etc...
+
+#### Solution
 
 - *In B2 add*: `=COUNTIF('Learner tracker'!L:L,A2)`
 
-I could, instead of adding in A2, typed "Pass" inside double quotes, with a lot of these interlinking formulas, it's a trade of between what's readable for the person writing the formula and what's easy. 
+In my solution, instead of giving a range of rows for column L, I use the syntax `L:L` which refers to the entire column.
 
-I'd always preference readability and maintainability though. 
-
-This does allow me to 'fill down' against our other outcomes. 
+Then for the criteria, I could have written in "Pass" manually, but I can refer to contents inside cell A2 instead which holds that value - now I can simply auto-populate the values for the other outcomes.
 
 - *Auto fill down*
 
-Another set of information we may be interested in is the number of students based at each site and the passrate. 
+This approach is fine, it works as we can see - but when making a decision between what appears smart and what's readable to you. Choose readability all the time. 
 
-I'll repeat a similar process, giving a section header to give the data meaning
+Another set of information we may be interested in is the number of students based at each site and the pass-rate. 
+
+I'll repeat a similar process, just giving a section header to give the data some meaning
 
 - *In cell A8 add*: 'Site'
+  - Then underneath I'll write out the site names we have.
   - *In cell A9 add*: 'RLH'
   - *In cell A10 add*: 'NUH'
   - *In cell A11 add*: 'WXH'
@@ -550,14 +589,14 @@ I'll repeat a similar process, giving a section header to give the data meaning
   - *In cell A14 add*: 'CW'
   - *In cell A15 add*: 'GSS'
 
-Then to find the number of students, our workhorse of analysis, `COUNTIF`
+Then to find the number of students based in each site, I'll use another `COUNTIF`
 
 - *In cell B8 add*: 'Number of students'
 - *In cell B9 add*: `=COUNTIF('Learner tracker'!G:G,A9)`
 
 Then I'll 'fill down' the other sites as well. 
 
-A good thing to do at this point would be to check our work. I've manually gone through and looked for different sites.
+A good thing to do at this point would be to check our work. I've manually gone through column G and looked for different sites. I want to make sure I've not missed any, there should be 199 in total. 
 
 - *In cell A16 add*: 'Total'
 - *In cell B16 add*: `=SUM(B9:B15)`
@@ -566,16 +605,23 @@ Now we can do some more interesting analysis.
 
 - *In cell C8 add*: 'Pass'
 
-We're not just counting one thing now but many, so I'll use the `COUNTIFS` formula which let's us pass in a set of conditions. 
+With **COUNTIF** we have room for two arguments:
+1. The range
+2. And the criteria 
 
-*Add here*
+Now I'm interested in a more complex assessment. 
+
+I want to check for each site in 'Learner tracker' whether that learner has passed. So we've got two conditions or criteria. 
+
+I'll use the `COUNTIFS` formula which let's us pass in a set of conditions. 
+
 - *In cell C9 add*: `=COUNTIFS('Learner tracker'!G:G,A9,'Learner tracker'!L:L,"Pass")`
 
-So we have 2 conditions, that for each row in coloumn G in the Learner tracker sheet has the value 'RLH' and also in row L has the value "Pass"
+So we have 2 conditions, that for each row in coloumn G in the Learner tracker sheet has the value 'RLH' and also in row L has the value "Pass", then we count those values. 
 
 - *auto fill down remaining values*
 
-Finally for this section, just the ability to find the percentage of those passed based on site. 
+Finally for this section, just the ability to find the percentage of those who passed for each site. 
 
 - *In cell D8 add*: '% Passed'
 - *In cell D9 add*: `=C9/B9`
@@ -590,7 +636,9 @@ We've got lots of formatting options.
 - I'll choose **Number**
 - Then **percentage**
 
-This type of calculation could cause an error. Hypothetically if we had oversight of a new hospital and initially had 0 students there, any number divided by 0 would cause an error. 
+I wanted to get to this point so I could show you a potential error.
+
+Hypothetically if we had oversight of a new hospital and initially had 0 students there, any number divided by 0 would cause an error. 
 
 Let me demo this quickly.
 
@@ -598,15 +646,24 @@ Let me demo this quickly.
   - *Add to new A16*: 'New Hosptial*
   - *Auto fill down cell B16, C16, D16*
 
-We've correctly found that there's currently no students at 'New Hosptial' and therefore there's differently no students who've passed. That's fine, the 'Learner tracker' will be updated in due course but the problem is we've not got an error.
+We've correctly found that there's currently no students at 'New Hosptial' and there's differently no students who've passed. 
 
-What we ought to do is wrap our formulas with the `IFERROR`
+That's fine, the 'Learner tracker' will be updated in due course but the problem is we've not got an error - which could look like tardiness.
+
+What we ought to do is wrap our formulas inside another formula, `IFERROR`
+
+- *In cell D9, add*: `=IFERROR(C9/B9)`
+
+We can see it takes two arguments:
+1. The value it returns if there's no error
+2. The value it returns if there is an error
+
+What I really want to do is return some text saying, "No students attending RLH" if there's no students at RLH.
+
+I can use an ampersand to pass some text value and as part of that text also return additional text from a cell. 
 
 - *In cell D9, add*: `=IFERROR(C9/B9,"No students attending: "&A9)`
 
-What we're saying is, if the first argument produces an error, instead of displaying that error, pass the second argument instead. 
-
-I've combined some text and the cell value just with an ampersand. 
 
 - *Auto fill down*
 
@@ -617,7 +674,7 @@ Let's take a little break now, let's come back in 15 minutes and we'll look at c
 
 ## Block 4 - VLOOKUP vs XLOOKUP
 
-Let's turn our attention to **Look Ups**, you'll most likely have heard about these in relation to a **VLOOKUP** and an **XLOOKUP**. 
+Let's turn our attention to **Look Ups**, if you've heard of these, it'll most likely have heard about these in relation to a **VLOOKUP** and an **XLOOKUP**. 
 
 Generally, a look up is a process that searches for a specific piece of information in one part of your data and pulls back a corresponding value for the same row or column.
 
