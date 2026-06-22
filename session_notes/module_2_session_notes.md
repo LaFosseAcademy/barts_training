@@ -24,7 +24,7 @@ The analytical work we've done so far, cleaning, joining is all about producing 
 
 Now we need to try and make those numbers useful. 
 
-That involves selecting the right visual form, stripping away the noise that obsecures the point we're trying to convey and framing the finding we made that prompts a decision rather than just an observation. 
+That involves selecting the right visual form, stripping away the noise that obscures the point we're trying to convey and framing the finding we made that prompts a decision rather than just an observation. 
 
 The skills here aren't necessarily technical, building charts in Excel takes minutes. 
 
@@ -91,7 +91,7 @@ On the screen we have a breakdown of the number of students in each **Division**
 **ANSWER**
 - Too many segments or divisions
 - Difficult to see the meaning of the chart
-  - Makes us ask further questions
+- Makes us ask further questions
 
 One thing we've not done with this dataset is clean it, which we should do. 
 
