@@ -60,6 +60,13 @@ That's available to you in the SharePoint you've been invited to but we can dist
 
 We'll also be recording the training so you'll have access to revisit this session at a later date if there's anything specific you want to recap.
 
+Effectively, this morning we'll be attempting to answer 4 key questions:
+
+1. how should I manually interact with raw data in order to extract information?
+2. how can I pull information from several sources to getter wider context to data?
+3. how can I summarise large datasets when data is evolving and the insight I need is frequently changing?
+4. how can I access the right information and choose the right visualisation to convey the information needed?
+
 ### The Training
 
 Ok, let's get into it then! 
@@ -96,7 +103,7 @@ Those last two parts we'll tackle more comprehensively in Modules 3 and 4.
 
 ## Block 1 - Getting Data into Excel Online
 
-So before we get started we need some data. 
+So before we get started we need some data. Initially remember we're just focussing on **how you should manually interact with raw data in order to extract information.**
 
 You should have been invited to a SharePoint, I'll share the link on Teams as well just incase the invite has got lost. 
 
@@ -678,7 +685,7 @@ Let's turn our attention to **Look Ups**, if you've heard of these, it'll most l
 
 Generally, a look up is a process that searches for a specific piece of information in one part of your data and pulls back corresponding values for the same row or column.
 
-It's essentially saying: "Using this value in one place, bring back related information from somewhere else". 
+It's essentially saying: "Using this value in one place, bring back related information from somewhere else" and it's going to help us answer our second question **how can you pull information from several sources to getter wider context to data?**
 
 So in our spreadsheets, as we saw at the very beginning we had data relating to students inside the files:
 
@@ -925,7 +932,7 @@ Most of our learners won't have scored exactly a 0, 40 or 70 so an exact match i
 
 We'll finish this module looking at Pivot Tables.
 
-PivotTables are one of the most powerful tools available to anyone working with tabular data, and also one of the most underused. 
+PivotTables are one of the most powerful tools available to anyone working with tabular data, and also one of the most underused - they're going to help us answer our third question **how can you summarise large datasets when data is evolving and the insight you need is frequently changing?**
 
 The reason most people avoid them is that they look complex and feel unfamiliar. Once you understand the logic and the different fields — rows, columns, values, filters — they become the fastest way to answer a question like "how does this break down by team?" or "what does this look like by month?"
 
