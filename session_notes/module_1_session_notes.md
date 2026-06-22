@@ -927,24 +927,28 @@ We'll finish this module looking at Pivot Tables.
 
 PivotTables are one of the most powerful tools available to anyone working with tabular data, and also one of the most underused. 
 
-The reason most people avoid them is that they look complex and feel unfamiliar. Once you understand the logic — rows, columns, values, filters — they become the fastest way to answer a question like "how does this break down by team?" or "what does this look like by month?"
+The reason most people avoid them is that they look complex and feel unfamiliar. Once you understand the logic and the different fields — rows, columns, values, filters — they become the fastest way to answer a question like "how does this break down by team?" or "what does this look like by month?"
 
-The alternative to a PivotTable is a manual summary table built with COUNTIF formulas, like we saw earlier, which works well for a fixed structure but again, there's a lot of manual input and if the data changes, formulas may break. 
+The alternative to a PivotTable is a manual summary table built with several COUNTIF formulas, like we saw earlier.
+
+They work well for a fixed structure but again, there's a lot of manual input and if the data changes, formulas may break. 
 
 PivotTables let you change the breakdown really easily, without rewriting formulas. 
 
-If you're initially trying to gain an insight - where you are not yet sure which view of the data is most useful — the flexibility is invaluable.
+If you're initially trying to gain an insight - where you are not yet sure which view of the data is most useful — the flexibility of a PivotTable is invaluable.
 
 This doesn't mean, you'll never write a a excel formula again. 
 
-- PivotTables are ideal for exploration and for reports where the data will be refreshed regularly. 
-- Formula-based summaries are better when you need a fixed, portable structure that others can read who may not understand how to use PivotTables.
+- PivotTables are ideal for exploration and for reports where the data will be updated regularly. 
+- Formula-based summaries are better when you need a fixed, portable structure that others, and those who may be unfamiliar with PivotTables can read. 
 
-PivotTables sit at the boundary between the **Analysis** and **Visualisation** stages. They are the tool you use to find the summary that is worth communicating — before then going to create a chart or diagram.
+If we think back to the Data Lifecycle, PivotTables sit at the boundary between the **Analysis** and **Visualisation** stages. They are the tool you use to find the summary that is worth communicating — before then going to create a chart or diagram.
 
 ### Getting Started
 
 We'll be using the `Apprentice KPI tables April 2026` file.
+
+- *Open file from personal folder*
 
 The reason I chose this is because the data is firstly **tabular** but it's:
 - repetitive
@@ -952,14 +956,16 @@ The reason I chose this is because the data is firstly **tabular** but it's:
 
 A good test you can do by yourself is to say to yourself:
 
-- *Can I ask, "how many", or "how much" or "what's the average" based on a category.*
+- Can I ask: "how many", or "how much" or "what's the average" based on a category.
+
+
 
 With our data I can easily ask questions like:
 - *how many data analysts are there?*
 - *how many are based at the Royal London Hospital?*
 - *how many are married?*
 
-To create a **PivotTable** we need to click on any cell within the data. 
+To create the **PivotTable**, firstly we need to click on any cell within the data. 
 
 Then on the top window then click **Insert**. Following that you should see a drop down option for **PivotTable**, then we'll need to selet **From Table/Range**
 
@@ -982,16 +988,16 @@ Those fields help up answer questions like: *"How do I want to group my data, an
 
 #### Rows
 
-If I drag **Site** into the **Rows** section what we're doing is group the information by the individual values from in that column on the previous table. 
+If I drag **Site** into the **Rows** section, what we're doing is group the information by the individual values from the **site** column on the previous table. 
 
 We can add more fields to the **Rows**. If I drag **Division** underneath **Rows**, you can see that we're initially grouping by **Site**, then within each **Site**, what we've done is group all the **Divisions** which appear within each parent group. 
 
 So pretty quickly you can see that:
-- the site **GCS** has only one division represented
-- the **RLH** has much more
+- the site **GCS** has only one division represented: **GCS PHARMACY**
+- **GSS** has much more
 
 
-I'll remove that field but we can layer these groups however we want. 
+I'll remove the **Division** field but we can layer these groups however we want. 
 - *Remove Division from Rows*
 
 
@@ -1008,12 +1014,14 @@ If I drag **Names** into **Values**, Excel automatically counts the number of na
 
 Count is the default but I can change that. 
 
-If I hover over the *Cont of Names* you'll see a drop down menu and then if I click into *Value Field Settings* we'll see options for:
+If I hover over the *Count of Names* you'll see a drop down menu and then if I click into *Value Field Settings* we'll see options for:
 - Count
 - Average
 - Max
 - Min
 - Product etc..
+
+- *Close that window*
 
 If I drag the field **age** into values, it'll add a new column and we can then change the field instead of **count** or **sum** into **average** and then see the average age of students based on each site. 
 
@@ -1023,7 +1031,7 @@ If we were to group by **Site** and then **Staff Group**
 
 - *Add field "Staff Group" to rows, underneath Site*
 
-Then we'd be seeing the **Average of age** column would be showing the average ages of people within each Staff Group. 
+Then we'd be seeing for each **site**, then grouping the data by **staff group** followed by the count of names in each sub group and the average age of people within that sub group as well.
 
 #### Columns
 
@@ -1033,19 +1041,12 @@ I'll remove everything but our **Site** row and **Count of Name** in Values.
 
 - *remove all fields, aside from 'site' in rows and 'count of name' in Values*
 
-If I then drag **Ethnicity** into Columns, it'll split to group which we've got, **rows** into the ethnicities based in each group. 
+If I then drag **Ethnicity** into Columns, it'll split the group which we've got; **Sites**, defined in **rows** into the ethnicities present in the column. 
 
 - *Add Ethnicity to Columns*
 
-- *Add here*
+If we added a further column like Gender, underneath Ethnicity, we'd then split the count of each ethnicity by site into gender as well. 
 
-We can add a further column and similar to our first, within each column we've got, so:
-- Asian
-- Black
-- Mixed
-- etc..
-
-Then the Pivot Table will add columns for the other values in the data. 
 
 - *Add Gender to Columns underneath Ethnicity**
 
@@ -1054,14 +1055,16 @@ So now we're seeing the breakdown of gender for each ethnicity.
 With all of these things it's best to have fairly shallow data. 
 
 Having 1 to 2 rows which combine well together, maybe a:
-- row to group data by *city*, then another row for *site* works quite well. If we were to go much deeper, the readability of the data becomes quite hard and it'll prevent you from telling the core story of your data.
+
+- row to group data by *city* if that information was present, then another child row for *site* would work quite well.
+  - If we were to go much deeper, the readability of the data becomes quite hard and it'll prevent you from telling the core story of your data.
 
 - a similar thing in relation to columns and values as well
 
 So just as a recap:
 - rows - group the data 
-- values - calculate 
-- columns - split the groups
+- values - calculate information
+- columns - split the groups further
 
 #### Filters
 
@@ -1075,15 +1078,15 @@ We'll see a new section above our pivot table, if we click on the drop down we c
 
 We can also apply a filter onto a specific row or group by clicking on the drop down arrow as well. 
 
-Using PivotTables can feel quite complicated and I'm sure some people will be more comfortable than others but it's important to play around with the data.
+Using PivotTables can feel quite complicated but with anything, the more you try to use them practically, the easier it'll get. 
 
-See the different ways you can present it and have your approach how to get meaningful insights. 
+There's often multiple ways to present information aswell. We could place Ethnicity or Gender into rows as well - it then becomes a choice about how you want to present any data from within the spreadsheet. 
 
 ### Challenge
 
-I'd like to give you an opportunity to do that right now. 
+I'd like to give you an opportunity to creat your own pivot table. 
 
-What I want is for you to have a go and basically create a PivotTable which will show, from those who've **withdrawn** or **paused** their training, how many of them had any form of **caring responsibilities** or those who didnt. 
+What I want is for you to have a go creating a PivotTable which will show, from those who've **withdrawn** or **paused** their training, how many of them have any form of **caring responsibilities** or those who didnt. 
 
 
 ### Solution
