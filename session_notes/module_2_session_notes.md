@@ -16,7 +16,7 @@
 
 ### Training Overview
 
-We're now moving into Module 2.
+We're now moving into Module 2 where we're trying to answer our final question for the morning **how can you access the right information and choose the right visualisation to convey the information needed?**
 
 This is where data stops being a spreadsheet and starts becoming a message. 
 
