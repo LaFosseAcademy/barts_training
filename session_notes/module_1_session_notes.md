@@ -175,11 +175,12 @@ If we think back to the data life cycle, this is the **Access** stage. When we f
 
 ## Block 2 - Cleaning & Structuring Data
 
+
 If we go back to the spreadsheet, this file is going to be part of a wider reaching goal of mine, to track an apprentices through several different placements and have accurate data about their journey. 
 
-That student data currently exists across two files. That's not the only problem. 
+That student data currently exists across two files. Inconsistent data and data in multiple locations is not something that can be fixed overnight but what we are going to aim to do is teach you some methods you can use to draw understanding from multiple files. 
 
-At the moment, we can see there's a few anomalies with the data.
+At the moment, we can see there's a few anomalies with the data with have infront of us.
 
 - On row 21: We're missing data about the **Trust**, **Placement Dates** then the **Allocated ward and department** info.
 
