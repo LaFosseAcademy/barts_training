@@ -175,7 +175,11 @@ If we think back to the data life cycle, this is the **Access** stage. When we f
 
 ## Block 2 - Cleaning & Structuring Data
 
-If we go back to the spreadsheet we can see there's a few anomalies with the data. 
+If we go back to the spreadsheet, this file is going to be part of a wider reaching goal of mine, to track an apprentices through several different placements and have accurate data about their journey. 
+
+That student data currently exists across two files. That's not the only problem. 
+
+At the moment, we can see there's a few anomalies with the data.
 
 - On row 21: We're missing data about the **Trust**, **Placement Dates** then the **Allocated ward and department** info.
 
@@ -467,7 +471,7 @@ After this we could remove duplicates if they existed but following that our dat
 
 ## Block 3 - Core Formulas for Analysis
 
-So now that we've got clean data I want to take a look through a few more formulas. 
+So now that we've got clean data I want to take a look through a few more formulas. I'll move away from the goal of the students tracker for a moment. 
 
 We've seen so far, **COUNTIF**, **IF** and a couple of others.
 
@@ -681,7 +685,7 @@ Let's take a little break now, let's come back in 15 minutes and we'll look at c
 
 ## Block 4 - VLOOKUP vs XLOOKUP
 
-Let's turn our attention to **Look Ups**, if you've heard of these, it'll most likely have been in relation to a **VLOOKUP** and an **XLOOKUP**. 
+Let's turn our attention to **Look Ups** and back to having our student tracker. Regarding **LOOKUPS**, if you've heard of these, it'll most likely have been in relation to a **VLOOKUP** and an **XLOOKUP**. 
 
 Generally, a look up is a process that searches for a specific piece of information in one part of your data and pulls back corresponding values for the same row or column.
 
