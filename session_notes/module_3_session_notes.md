@@ -336,9 +336,9 @@ What the agent will do instead is give you formulas or scripts to copy and paste
 
 The training the AI recieves, we can assume will always be improving but right now we're not quite at the point where we can do full automation. 
 
-## Block 2 - CoPilot in PowerPoint & Word
+## Block 2 - Copilot in PowerPoint & Word
 
-Let's take a look trying to use CoPilot to create some visualisations. 
+Let's take a look trying to use Copilot to create some visualisations. 
 
 I'm going to use: `Apprentice KPI tables April 2026`
 
@@ -348,11 +348,11 @@ I've been asked to present back to the group regarding the ethnic background of 
 
 Potentially to see if there's an over or under representation of any ethnicity by group. 
 
-I know how to create a Pivot Table but I can delegate this responsibility to CoPilot. 
+I know how to create a Pivot Table but I can delegate this responsibility to Copilot. 
 
-So if I open CoPilot on the worksheet let me write a quick prompt. 
+So if I open Copilot on the worksheet let me write a quick prompt. 
 
-- *Make sure CoPilot allows editing*
+- *Make sure Copilot allows editing*
 
 - *Create a pivot table on a new sheet with a primary row of staff group and a column of ethnicity then for values a count of name ignoring staff groups of N/A and blank*
 
@@ -368,37 +368,37 @@ Based on the chart, it's clear that there's no a even distribution of ethnicitie
 
 I want to change the chart title to cut through any noise and land this message.
 
-Both the pivot table and chart, despite being created by CoPilot, we can customise ourself, so I'm going to take the opportunity to do this. 
+Both the pivot table and chart, despite being created by Copilot, we can customise ourself, so I'm going to take the opportunity to do this. 
 
 - *Edit chart heading to*: 'Even distribution of ethnicities amongst Staff Groups'
 
-This is where I believe a huge benefit to using CoPilot is.
+This is where I believe a huge benefit to using Copilot is.
 
-With the CoPilot Agent, currently it's really useful for summarising data or seeing links within the data. 
+With the Copilot Agent, currently it's really useful for summarising data or seeing links within the data. 
 
 When you have lots of new files to constantly asses an agent is the right choice. 
 
-Once you understand the raw data you have acces to and need to go deeper to extract information from the data then using CoPilot to generate formulas or in our case Pivot Tables and visualisations will save you time.
+Once you understand the raw data you have acces to and need to go deeper to extract information from the data then using Copilot to generate formulas or in our case Pivot Tables and visualisations will save you time.
 
 ### PowerPoint
 
-I now want to put this all together in an actual powerpoint.
+I now want to put this all together in an actual PowerPoint.
 
-Another limitation of CoPilot right now is cross service creation. 
+Another limitation of Copilot right now is cross service creation. 
 
-We can't easily use to CoPilot in Excel and ask it to create a PowerPoint deck. 
+We can't easily use to Copilot in Excel and ask it to create a PowerPoint deck. 
 
 So what I'll do is from my personal folderis create an empty PowerPoint and copy the graph I created over. 
 
 - *Create a new PowerPoint and copy the chart into Slide 1*
 
-Then using CoPilot built into PowerPoint I can run a prompt specific to that service.
+Then using Copilot built into PowerPoint I can run a prompt specific to that service.
 
 - *Add a new slide with 3 key insights regarding the ethnic spread of apprentices amongst the staff groups using the chart*
 
-CoPilot may prompt us for additional information if it wants more context about the style or tone of any new slides and it's at our discretion about the input we give it. 
+Copilot may prompt us for additional information if it wants more context about the style or tone of any new slides and it's at our discretion about the input we give it. 
 
-Generally speaking I will prefer a:
+Generally speaking it will prefer a:
 - concise
 - minimal and professional tone
 
@@ -407,19 +407,18 @@ It may also prompt us as where to create the slide
 - after
 - or overwriting what we already have
 
-My main takeaway is the service you want to use. Whether it's:
-- excel
-- word
-- powerpoint
+My main takeaway is that whether the service you want to use is:
+- Excel
+- Word
+- PowerPoint
 
-Create a file for that service first and then use the specific CoPilot for that tool.
+Create a file for that service first and then use the specific Copilot for that tool.
 
 Let's try and take this to Word as well. 
 
 - *Create a new Word file*
 
-
-Now in CoPilot for Word I can provide my prompt to generate a one page summary. 
+Now in Copilot for Word I can provide my prompt to generate a one page summary. 
 
 - *Act as an NHS Barts Health administrator reviewing workforce equality data. Analyse the data provided below showing the distribution of ethnicities across staff groups and provide a concise summary of the overall pattern, focusing on whether ethnicity representation is broadly evenly distributed across staff groups and highlighting any notable variations. Present the output as a short professional paragraph followed by 3–4 key takeaway bullet points suitable for inclusion in a report or presentation.*
 
@@ -427,15 +426,15 @@ Now in CoPilot for Word I can provide my prompt to generate a one page summary.
 
 - *Hit enter*
 
-Use of CoPilot in PowerPoint or Excel can be a game changer when it comes to producing a report or slide deck really quickly.
+Use of Copilot in PowerPoint or Excel can be a game changer when it comes to producing a report or slide deck really quickly.
 
-What CoPilot usually gets right is the **structure** and **coverage** in response to the prompt you gave. 
+What Copilot usually gets right is the **structure** and **coverage** in response to the prompt you gave. 
 
 Though sometimes the formatting, especially with PowerPoint almost always needs some manual correction. 
 
 You can try to write another prompt but generally, you'll find yourself chasing your own tail getting AI to fix an AI mistake. 
 
-Where you're most likely to use CoPilot in Word will be:
+Where you're most likely to use Copilot in Word will be:
 
 - Drafting a narrative summary from data like we've done. 
 - Or Rewriting a section for a different tone or audience. Perhaps you've received some copy or data from your line mananger and you want to copy that data into word and share it with your team. 
@@ -459,9 +458,9 @@ It'll show that some sites have far more people than others.
 
 With this information I want you to do a few things.
 
-- Use CoPilot to recommend a chart type to display the **site** and **avergae** age information
-  - Create that chart and clean it the way you think is best
-- Use CoPilot to generate a slide deck with 3 slides
+- Use Copilot to recommend a chart type to display the **site** and **average** age information
+- Create that chart and clean it the way you think is best
+- Use Copilot to generate a slide deck with 3 slides
 
 1. For the chart you choose
 2. For 3 key insights
@@ -473,13 +472,13 @@ I hope you enjoyed that.
 
 The most time-consuming part of producing a report or presentation isn't the analysis - but the drafting, writing, structuring of slides. 
 
-The output you got from CoPilot should be that first draft. 
+The output you got from Copilot should be that first draft. 
 
-CoPilot won't understand Barts Health's reporting conventions, the specific context behind the numbers, nor the preferences and priorities of the stakeholder receiving the output.
+Copilot won't understand Barts Health's reporting conventions, the specific context behind the numbers, nor the preferences and priorities of the stakeholder receiving the output.
 
-What CoPilot will do is created a plausable Word Document or Slidedeck but it'll often miss the specific finding or takeaway with makes a report worth reading. 
+What Copilot will do is created a plausable Word Document or slidedeck but it'll often miss the specific finding or takeaway with makes a report worth reading. 
 
-So treat CoPilot as your starting point rather than the endpoint. 
+So treat Copilot as your starting point rather than the endpoint. 
 
 
 ## Block 3 - CoPilot Across Teams & Outlook 
