@@ -44,9 +44,9 @@ It's something worth self-reflecting on each time you go through a data lifecycl
 
 - `Slide 2`
 
-So the challenge will hopefully go through all steps of the data lifecycle which you can see on the slide. Remember, the more that you think about this life cycle as a process, the more proficient you'll be at working with data.
+- From `Collection -> Storage -> Access -> Cleaning -> Analysis -> Visualisation -> Communication -> Action`
 
-From `Collection -> Storage -> Access -> Cleaning -> Analysis -> Visualisation -> Communication -> Action`
+So the challenge will hopefully go through all steps of the data lifecycle which you can see on the slide. Remember, the more that you think about this life cycle as a process, the more proficient you'll be at working with data.
 
 Throughout the task we'll be around to support you with the datasets you've brought in and the questions that you want answered. It's also my hope that you can lean on colleagues in the room as well.
 
