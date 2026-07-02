@@ -31,37 +31,37 @@ Just to remind you, previously we manually completed a data workflow:
 
 That took us the best part of the day, with a few actitivite thrown in the middle as well. 
 
-Today we'll be looking to see, how much of that can be done faster with Microsoft CoPilot?
+Today we'll be looking to see, how much of that can be done faster with Microsoft Copilot?
 
 Fortunately, the answer is, quite a lot. 
 
-For the right tasks, with that right prompts we can quicken a lot of those processes. I'll see this a lot of times throughout the day but with any action we use CoPilot for, there needs to be a human reviewing everything before it's shared. 
+For the right tasks, with the right prompts we can speed up a lot of those processes. I'll see this a lot of times throughout the day but with any action we use Copilot for, there needs to be a human reviewing everything before it's shared. 
 
 This hopefully speaks to the manner in which I want to approach today. 
 
-CoPilot isn't about replacing the skills from modules 1 and 2, it's about applying them with greater speed and less effort. 
+Copilot isn't about replacing the skills from modules 1 and 2, it's about applying them with greater speed and less effort. 
 
-I appreciate in society there's a level of anxiety about AI quite broadly but CoPilot or any Large Language Model is only as trustworthy as the person who reviews their output. It can and does make mistakes. 
+I appreciate in society there's a level of anxiety about AI quite broadly but Copilot or any Large Language Model is only as trustworthy as the person who reviews their output. It can and does make mistakes. 
 
 ### What is an LLM?
 
-Before we dive into CoPilot, I want to just explain what AI is in this context. 
+Before we dive into Copilot, I want to just explain what AI is in this context. 
 
 I've used it before we whether it's;
-- Microsoft CoPilot
+- Microsoft Copilot
 - ChatGPT
 - Claude AI
 
-They're described as Large Language Model
+They're described as being Large Language Models
 
-- Human's learn langugage by reading, listening and generally interacting
-- A LLM on the other hand learns patterns in language by processing enormous amounts of text. 
+- Humans learn langugage by reading, listening and generally interacting
+- An LLM on the other hand learns patterns in language by processing enormous amounts of text. 
 
-If I were to ask you to answer the question: *"The capital of France is?"*, as a human, we may have learnt the answer in school, through travelling to France or my just looking at a globe.
+If I were to ask you to answer the question: *"The capital of France is?"*, as a human, we may have learnt the answer in school, through travelling to France or by just looking at a globe.
 
 A Large Language Model consumes vast amounts of data from texts, documents, any data it can get access to. Rather than storing facts like a database, it learns patterns and relationships in that data. 
 
-If I ask CoPilot: *"Why is the sky blue?"*, the AI won't look up each word to understand what it means but it'll understand themes in the prompt like: *"why"* in the prompt *"why is the sky blue"*. 
+If I ask Copilot: *"Why is the sky blue?"*, the AI won't look up each word to understand what it means but it'll understand themes in the prompt like: *"why"* in the prompt *"why is the sky blue"*. 
 
 It'll recognise a pattern in the question and generate a response based on what it learned during training about concepts such as sky, light and colour. 
 
@@ -69,7 +69,7 @@ You may have heard the term *"AI training"* before and this is taking all that d
 
 So why am I telling you this?
 
-Well, as humans, we can. make mistakes. That's no different to an AI. 
+Well, as humans, we can make mistakes. That's no different to an AI. 
 
 There's a term in AI called **hallucinations**
 
@@ -83,7 +83,7 @@ So just be careful.
 
 - `Slide 1`
 
-We've seen this data lifecycle before. We'll be using coPilot across multiple stages simultaneously, which is a strength and its main risk as well. 
+We've seen this data lifecycle before. We'll be using Copilot across multiple stages simultaneously, which is a strength and its main risk as well. 
 
 - It can help in this **analysis** stage, suggesting forumlas or summarising data
 - The **visualisations** stage, generating draft charts from the data
@@ -91,7 +91,7 @@ We've seen this data lifecycle before. We'll be using coPilot across multiple st
 
 The risk though is if we have any errors they can propagate quite quickly.
 
-If CoPilot creates a wrong formula to assess some data, imagine if we don't catch up and we use CoPilot to create a chart off poor data and again use AI to create a slidedeck and a draft email which goes out to our team. 
+If Copilot creates a wrong formula to assess some data, imagine if we don't catch up and we use Copilot to create a chart off poor data and again use AI to create a slidedeck and a draft email which goes out to our team. 
 
 So with each step of this data lifecycle, we'll need to check our work. 
 
@@ -105,11 +105,11 @@ Last session we cleaned this file so we'll start a fresh with the raw data.
 
 Then I'll copy over the file again from the root folder, back into my personal folder to work on it again.
 
-From my folder we should be able to see a little CoPilot icon on the file.
+From my folder we should be able to see a little Copilot icon on the file.
 
 <img src="../trainer_images/2.png">
 
-CoPilot has access to the file you are working in, and other files and emails in your Micrsoft 365 environment, depending on your organisations settings. 
+Copilot has access to the file you are working in, and other files and emails in your Micrsoft 365 environment, depending on your organisation's settings. 
 
 If we click on the button we should see:
 
@@ -136,7 +136,7 @@ We can approve the reasoning that if there's 35 distinct emails than the spreads
 
 ### Effective Prompting
 
-Once it's open we open the file though should see in the bottom right of the screen a little CoPilot symbol again. 
+Once it's open we open the file and we can see in the bottom right of the screen a little Copilot symbol again. 
 
 If I hover over it we'll see some options for:
 1. Add data insights
@@ -145,7 +145,7 @@ If I hover over it we'll see some options for:
 
 We'll explore these options soon but for now just click on the main logo again, which should open up a new window on the site of your screen. 
 
-From here there's some more default options CoPilot is trying to suggest for us. 
+From here there's some more default options Copilot is trying to suggest for us. 
 
 One thing we can see is the current mode is to **Allow editing**
 
@@ -157,16 +157,16 @@ The **Plan** option is a little more secure so instead of making changes directl
 
 Let's pick **Chat only** though. 
 
-This will let us use CoPilot like any LLM and provide queries or prompts on anything we're interested in. 
+This will let us use Copilot like any LLM and provide queries or prompts on anything we're interested in. 
 
 Like any sort of grammer, there's a correct anatomy of what makes a good prompt. 
 
 - `Slide 2`
 
 We should specify the:
-- **role**: what do we want CoPilot to behave as
+- **role**: what do we want Copilot to behave as
 - **context**: what the data or document is about
-- **task**: what you want CoPilot to do
+- **task**: what you want Copilot to do
 - **constraints**: limits on format, length etc..
 - **output format**: as a document, downloadable slide etc...
 
@@ -174,19 +174,19 @@ So if my role was a training lead I could ask Copilot.
 
 - *Type as you say*
 
-*"Act training lead for NHS Barts Trust, review this apprenticeship tracker spreadsheet and tell me which LL staff supervise the most students. Count distinct students and output the numbers as a list in descending order"*
+*"Act as training lead for NHS Barts Trust, review this apprenticeship tracker spreadsheet and tell me which LL staff supervise the most students. Count distinct students and output the numbers as a list in descending order"*
 
-If I then hit enter it'll crunch the numbers.
+If I then hit enter it'll crunch the numbers. Clearly, this is a pretty straightforward question and simply typing 'how many students does each LL have? Results in descending order' might give us the same output but we're prompting in this way as, for more complicated tasks, Role, Context, Task, Constraints, and Output can be really important.
 
 - *Hit Enter*
 
 Again, the last time I did this it'll show you how it achieved the output and again, review the formula to make sure the reasoning stands up to your interpretation of the data. 
 
-So the framework around: role / context / task / contrainsts and output is to get relevant information out of CoPilot.
+So the framework around: role / context / task / contraints and output is to get relevant information out of Copilot.
 
 ### Prompting Mistakes
 
-Common mistakes are being too vauge or asking multple unrelated questions in a single prompt. 
+Common mistakes are being too vague or asking multple unrelated questions in a single prompt. 
 
 If I asked:
 
@@ -199,14 +199,14 @@ Or if I said:
 
 ### Main uses
 
-There's three main uses I think you'll more commonly have for CoPilot though. 
+There's three main uses I think you'll more commonly have for Copilot though. 
 
-1. Asking CoPilot to explain what a dataset contains and identify any quality issues
-2. Asking CoPilot to suggest a formula for a specific task, i.e.:
+1. Asking Copilot to explain what a dataset contains and identify any quality issues
+2. Asking Copilot to suggest a formula for a specific task, i.e.:
   - *"write a formula that counts how many staff in column B that haven't completed training based on the value in column C"*
-3. Asking CoPilot to summarise a column or table in plain English, which is a little like what we've done. 
+3. Asking Copilot to summarise a column or table in plain English, which is a little like what we've done. 
 
-So let me ask coPilot if there's any data quality issues. 
+So let me ask Copilot if there's any data quality issues. 
 
 - *Type as you say*
 - *"Can you identify any data quality issues with this spreadsheet"*
@@ -218,13 +218,13 @@ Again, quick and easy and we then decide how to approach the cleaning process.
 
 Last session we cleaned this file by:
 - Removing white space
-- Standardise Casing
+- Standardising Casing
 - We standardised the values of the trust as well to have an **"Original Cohort"** column to seperate the different *Barts-continued* and *Barts extended* values we saw in the Trust column.
 - Finally we filled in some values from other spreadsheets as well, we used the **student allocations** spreadsheet to find some information about **Quinn Martin** on Row 32.  
 
-If we do this through CoPilot, it's my recommendation to do this one query at a time.
+If we do this through Copilot, it's my recommendation to do this one query at a time.
 
-CoPilot will get things wrong and one big query to clean this file may cause errors. If we work incrementally then we can make changes as we go.
+Copilot will get things wrong and one big query to clean this file may cause errors. If we work incrementally then we can make changes as we go.
 
 #### Prompt 1 - Trim Whitespace
 
@@ -250,14 +250,14 @@ Each of these prompts is actually quite long.
 
 They do the job we asked them quite well but there's a consideration to how much time we're actually saving. 
 
-AI is always learning and improving and a lot of the time you may be better plced to do things manually. 
+AI is always learning and improving but a lot of the time you may be better plced to do things manually. 
 
-Where CoPilot really excels in relation to Excel spreadsheets are really in regards to:
+Where Copilot really excels in relation to Excel spreadsheets is really in regards to:
 - Using it as a data-quality check
 - Using it to flag suspicious records for human review
 - Or producing summaries of spreadsheets
 
-These tasks which are repeatable, necessary and produce value are a good reason to use **CoPilot Agents**.
+These tasks which are repeatable, necessary and produce value are a good reason to use **Copilot Agents**.
 
 An agent lets you write instructions once, in full detail and save them as a prompt.
 
