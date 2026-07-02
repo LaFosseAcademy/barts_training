@@ -313,7 +313,7 @@ What we hopefully can see is on the right hand side of the screen an **Agent ove
 
 #### Agent Instructions
 
-Finally under **Agent instructions**, just to tell the agent it's role, limirations and the responses given.
+Finally under **Agent instructions**, just to tell the agent it's role, limitations and the responses given.
 
 *Provide accurate information about the selected files in a formal and professional tone. Keep responses concise, easy to scan, and focused on key findings. Prioritise identifying missing data, data quality issues, anomalies, and opportunities to populate missing values using information from other selected files. Present results as a small number of short bullet points, include confidence levels where values are suggested, and avoid lengthy explanations unless specifically requested. Ensure outputs are suitable for rapid review and exploration of newly received datasets.*
 
@@ -330,7 +330,7 @@ We're able to edit this and give the agent overview of new files when they arriv
 
 One thing you may have noticed if you've used agents before is that they perform much weaker if you try to prompt the agent to make changes directly to the files. 
 
-My recommendation would be if this is something you care to use CoPilot to do, I'd recommend doing so directly from the file itself and using CoPilot from there. 
+My recommendation would be if this is something you care to use Copilot to do, I'd recommend doing so directly from the file itself and using Copilot from there. 
 
 What the agent will do instead is give you formulas or scripts to copy and paste. 
 
