@@ -481,11 +481,11 @@ What Copilot will do is created a plausable Word Document or slidedeck but it'll
 So treat Copilot as your starting point rather than the endpoint. 
 
 
-## Block 3 - CoPilot Across Teams & Outlook 
+## Block 3 - Copilot Across Teams & Outlook 
 
-We can deloy CoPilot equally in other Microsoft 365 products like Teams and Outlook. 
+We can deloy Copilot equally in other Microsoft 365 products like Teams and Outlook. 
 
-I won't speak on this for too long but there's still value to be hard.
+I won't speak on this for too long but there's still value to be had.
 
 ### Teams
 
@@ -511,7 +511,7 @@ Based on this chat or transcript we can use CoPilot to summarise meeting notes o
 
 Let's summarise this Teams chat
 
-- *Open CoPilot in teams*
+- *Open Copilot in teams*
 
 <img src="../trainer_images/7.png">
 
@@ -519,9 +519,9 @@ Then just our prompt:
 
 - *"Act as a Workforce Development Lead at Barts Health NHS Trust. Review the following meeting notes and provide a concise professional summary of the key discussion points, decisions made, and any actions arising from the meeting. Present the output as a short executive summary paragraph, followed by bullet-pointed key discussion themes and an action log table showing the action, owner (if identified), and next steps."*
 
-Again, it's worth us looking through the output because we can't gauruntee any actions derived do correspond with the right teams. 
+Again, it's worth us looking through the output because we can't guarantee any actions derived do correspond with the right teams. 
 
-- *Leave teams open*
+- *Leave Teams open*
 
 ### Outlook
 
@@ -534,11 +534,11 @@ Moving into Outlook we can use CoPilot for three main uses.
 
 3. And suggesting a reply to an email, which can be then edited for tone and accuracy. 
 
-I'll quickly demo this by using the summary we generated from the teams conversation and use CoPilot again to write a quick email to my team to try and get some insights from the data. 
+I'll quickly demo this by using the summary we generated from the teams conversation and use Copilot again to write a quick email to my team to try and get some insights from the data. 
 
 <img src="../trainer_images/8.png">
 
-*Use Teams chat summery to create an email prompt to ask team to try and get some insights from the data*
+*Use Teams chat summary to create an email prompt to ask team to try and get some insights from the data*
 
 <img src="../trainer_images/9.png">
 
@@ -558,13 +558,13 @@ Either way, once you're provided your prompts, review the output and send the em
 
 ## Block 4 - Validating Outputs & Building Repeatable Workflows
 
-We're nearly done with this module and I want to conclude with a structured checklist to validate any CoPilot output before it is used or shared:
+We're nearly done with this module and I want to conclude with a structured checklist to validate any Copilot output before it is used or shared:
 
 - `Slide 4`
 
-As we've mentioned AI can and does make mistakes and I know from personal experience it's possible to take whatever CoPilot gives you as fact.
+As we've mentioned AI can and does make mistakes and I know from personal experience it's possible to take whatever Copilot gives you as fact.
 
-On the screen, you'll see 5 different checklists to make before sharing anything created from CoPilot. 
+On the screen, you'll see 5 different checklists to make before sharing anything created from Copilot. 
 
 1. **Accuracy**: it's important to check if any numbers, names or pieces of data are correct. 
 
@@ -574,15 +574,15 @@ In my example of sharing the actions from the Teams chat. I'll cross reference o
 
 3. For **Tone and register**, basically, will any messaging, again in an email or PowerPoint, land correctly with the intended audience. 
 
-4. Then we have the **specificity** for Barts health.
+4. Then we have the **specificity** for Barts Health.
 
-Throughout the course I've been a little interchangale between describing the apprentices as *learners, students and apprentices*. You'll know specifically what they ought to be referred to as. 
+Throughout the course I've been a little interchangable between describing the apprentices as *learners, students and apprentices*. You'll know specifically what they ought to be referred to as. 
 
-5. Finally **Actionability**, if there's something a colleague needs to do, make sure that CoPilot does clearly ask them to do it. 
+5. Finally **Actionability**, if there's something a colleague needs to do, make sure that Copilot does clearly ask them to do it. 
 
-The last thing anyone wants is to reach a deadline and a task hasn't been done because what you copied from CoPilot hasn't clearly asked them to do it. 
+The last thing anyone wants is to reach a deadline and a task hasn't been done because what you copied from Copilot hasn't clearly asked them to do it. 
 
-### CoPilot Task Value
+### Copilot Task Value
 
 It's also important to understand which tasks are **high-value**, which are **high-risk** and those which are **low-value**.
 
@@ -595,24 +595,24 @@ Tasks which save you a lot of time and are relatively AI safe are:
 - summarising information 
 - generating formula syntax 
 - reformatting
-- or rewritting copy for a different audiance 
+- or rewriting copy for a different audience 
 
 The reason being is most of these tasks use pre-existing information or naturally aligns with what Large Language Models are best suited to, drafting emails or text.
 
-Because CoPilot is a Microsoft tool again they're well equipped to return excel formulas. We've only covered a few, if there's something you want to do in excel and you don't know the formula, have confidence to ask CoPilot and you'll likely save a lot of time instead of reading lots of documentation. 
+Because Copilot is a Microsoft tool again they're well equipped to return Excel formulas. We've only covered a few, if there's something you want to do in Excel and you don't know the formula, have confidence to ask Copilot and you'll likely save a lot of time instead of reading lots of documentation. 
 
 
 #### High-Risk
 
-High risk uses of CoPilot on the other hand really revolve around anything to do with specific information.
+High risk uses of Copilot on the other hand really revolve around anything to do with specific information.
 
-If we're pulling in data for a specific person, or date, not to say CoPilot will often reference the wrong individual but if it does, the cost can be much higher. 
+If we're pulling in data for a specific person, or date, not to say Copilot will often reference the wrong individual but if it does, the cost can be much higher. 
 
-If I were to prompt CoPilot to pull information across several spreadsheets about a specific apprentice, to mitigate that risk, you'll need to see where CoPilot has pulled that data and check to see it's accuracy. 
+If I were to prompt Copilot to pull information across several spreadsheets about a specific apprentice, to mitigate that risk, you'll need to see where Copilot has pulled that data and check to see it's accuracy. 
 
-Additionally if there's any contracts or policy documents apprentices or staff need to read and sign - it's a good habit to either find the files yourself or verify that CoPilot has accessed the correct document before sending anything out.
+Additionally if there's any contracts or policy documents apprentices or staff need to read and sign - it's a good habit to either find the files yourself or verify that Copilot has accessed the correct document before sending anything out.
 
-This isn't to say that CoPilot is bad, it can make mistakes but so can we. 
+This isn't to say that Copilot is bad, it can make mistakes but so can we. 
 
 If I'm trying to pull information on an apprentice called 'Sophia', 'Layla' or 'Muhammed', I know these names all have a few variations in terms of spelling. 
 
@@ -621,11 +621,11 @@ Then a simple typo can return the wrong persons information, if I don't check an
 
 #### Low Value
 
-Low value tasks simply are when the manual version takes less time than writing a good prompt in CoPilot and then reviewing the output. 
+Low value tasks simply are when the manual version takes less time than writing a good prompt in Copilot and then reviewing the output. 
 
-If I know a students records are in a certain file and all I need to see it the status of their apprenticeship, it's easier and safer for me to go into the file and find the entry rather than use CoPilot. 
+If I know a students records are in a certain file and all I need to see it the status of their apprenticeship, it's easier and safer for me to go into the file and find the entry rather than use Copilot. 
 
-You all will a large number of tasks you need to think about on any given day and it's worth saying, for each of those tasks whether it's **high-value**, **high-risk** and **low value** won't always be obvious.
+You will all have a large number of tasks you need to think about on any given day and it's worth saying, for each of those tasks whether it's **high-value**, **high-risk** and **low value** won't always be obvious.
 
-The more you use CoPilot, see where it struggles and excels is part of the learning and you'll naturally make much more efficinet use of the tools. 
+The more you use Copilot, see where it struggles and excels is part of the learning and you'll naturally make much more efficinet use of the tools. 
 
