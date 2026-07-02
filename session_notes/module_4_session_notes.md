@@ -30,9 +30,9 @@ You'll need to think about:
 - what you leave
 - which formulas, look ups or pivot tables you use to assess the data
 - then which chart to display it
-- as we've just seen, they'll also be a decision about when you use CoPilot and when you don't
+- as we've just seen, they'll also be a decision about when you use Copilot and when you don't
 
-At the end it's my hope that you'll do a peer-review which other people you sat close to. 
+At the end it's my hope that you'll do a peer-review with other people that you're sat close to. 
 
 I don't want you to treat it as a formality but actually an opportunity to reflect on what worked well, what you'd do differently if we were to repeat the task. 
 
