@@ -42,9 +42,9 @@ I don't want you to treat it as a formality but actually an opportunity to refle
 
 It's something worth self-reflecting on each time you go through a data lifecycle, hopefully making improvements to your workflow every time. 
 
-So the challenge will hopefully go through all steps of the data lifecycle.
-
 - `Slide 2`
+
+So the challenge will hopefully go through all steps of the data lifecycle which you can see on the slide. Remember, the more that you think about this life cycle as a process, the more proficient you'll be at working with data.
 
 From `Collection -> Storage -> Access -> Cleaning -> Analysis -> Visualisation -> Communication -> Action`
 
