@@ -47,7 +47,7 @@ I appreciate in society there's a level of anxiety about AI quite broadly but Co
 
 Before we dive into Copilot, I want to just explain what AI is in this context. 
 
-I've used it before we whether it's;
+I've used it before whether it's;
 - Microsoft Copilot
 - ChatGPT
 - Claude AI
@@ -65,7 +65,7 @@ If I ask Copilot: *"Why is the sky blue?"*, the AI won't look up each word to un
 
 It'll recognise a pattern in the question and generate a response based on what it learned during training about concepts such as sky, light and colour. 
 
-You may have heard the term *"AI training"* before and this is taking all that data and repeatedly asking it to predict missing words or phrases. Each time it gets something wrong, the model is adjusted slightly. After running billions or trillions of these adjustments, it becomes more accurate and useful in generating useful responses.  
+You may have heard the term *"AI training"* before and this is taking all that data and repeatedly asking it to predict missing words or phrases. Each time it gets something wrong, the model is adjusted slightly. After running billions or trillions of these adjustments, it becomes more accurate and useful in generating useful responses. You may not know this but every time you get one of those Captchas online asking you to identify all the bridges in the pictures, part of what you're doing is training an LLM.  
 
 So why am I telling you this?
 
@@ -83,9 +83,9 @@ So just be careful.
 
 - `Slide 1`
 
-We've seen this data lifecycle before. We'll be using Copilot across multiple stages simultaneously, which is a strength and its main risk as well. 
+We've seen this data lifecycle before. We'll be using Copilot across multiple stages simultaneously, which is both a strength and its main risk as well. 
 
-- It can help in this **analysis** stage, suggesting forumlas or summarising data
+- It can help in this **analysis** stage, suggesting formulas or summarising data
 - The **visualisations** stage, generating draft charts from the data
 - We can take it further into the **communication** stage as well, drafting emails, meeting summaries and any narrative text we want. 
 
@@ -124,7 +124,9 @@ Let me click on **Ask a question** and I'll ask: *"How many students are there?"
 
 I did this before so I hope I get the same output.
 
-It said there's 35 students, based on the 35 distinct email entries in the spreadsheet. 
+It said there's 35 students, based on the 35 distinct email entries in the spreadsheet.
+
+- **NB if it comes up with wrong number alter search to 'How many students are there? Base this on number of student emails' this could be a good discussion point**
 
 This is correct as far as the data goes and allows me to quickly get insights about the data but let's open the file.
 
@@ -213,6 +215,7 @@ So let me ask Copilot if there's any data quality issues.
 
 Again, quick and easy and we then decide how to approach the cleaning process.
 
+- **Make sure you switch to 'Editing' mode in Copilot window**
 
 ### Cleaning Data
 
@@ -242,7 +245,9 @@ Insert one new column immediately to the right of column A. Name it "Original Co
 
 #### Prompt 4 — The lookup
 
-In column L, some cells are empty. Fill only those empty cells using student_allocations.xlsx, which is in the same SharePoint folder as this file. Match students by email address — email is in column J of this spreadsheet and column D of student_allocations.xlsx. Where a match is found, copy the Clinical Area value from column A of student_allocations.xlsx. Do not create new columns. Do not overwrite cells in column L that already have a value.
+In column L, some cells are empty. Fill only those empty cells using student_allocations.xlsx, which is in the same SharePoint folder as this file. Match students by email address — email is in column J of this spreadsheet and column E of student_allocations.xlsx. Where a match is found, copy the Clinical Area value from column B of student_allocations.xlsx. Do not create new columns. Do not overwrite cells in column L that already have a value.
+
+- **NB Be careful here - it may find multiple copies of student_allocations.xlsx - might need to add explicit link. If it goes awry it can be talking point**
 
 #### Overview
 
