@@ -348,6 +348,7 @@ Let's take a look trying to use Copilot to create some visualisations.
 I'm going to use: `Apprentice KPI tables April 2026`
 
 - *Open 'L&D learner tracker FG'*
+- **NB WRONG FILE?**
 
 I've been asked to present back to the group regarding the ethnic background of our apprentices in each of the staff groups. 
 
@@ -369,7 +370,9 @@ It's at this stage I want to generate a visualisation for a PowerPoint Presentat
 
 - *Wait for chart to be created*
 
-Based on the chart, it's clear that there's no a even distribution of ethnicities in each staff group - which is something I can report back.
+Based on the chart, it's clear that there's not a even distribution of ethnicities in each staff group - which is something I can report back.
+
+**NB It is relatively even?**
 
 I want to change the chart title to cut through any noise and land this message.
 
