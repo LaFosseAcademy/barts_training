@@ -111,14 +111,13 @@ I have two choices at this point:
 
 Open up your Copilot chat window - this is usually in the top right of your screen.
 
-We're going to give Copilot access to the file you are working on. We can usually do one of a few things with the file.
+We're going to give Copilot access to the file you are working on. We can do lots things with the file.
 
 1. Summarise
-2. Create an FAQ
-3. Ask a question
-4. Create an agent
+2. Ask a question
+3. Edit the file
 
-We can do all of this data management without needing to open the file. Rather, we going to click on the `+` symbol and then attach the dataset (you could also paste the link you copied in). 
+We can do all of this without needing to open the file. Rather, we going to click on the `+` symbol and then attach the dataset (you could also paste the link you copied in). 
 
 I'll ask: *"How many students are there?"*
 
@@ -138,28 +137,7 @@ We can approve the reasoning that if there's 35 distinct emails than the spreads
 
 ### Effective Prompting
 
-Once it's open we open the file and we can see in the bottom right of the screen a little Copilot symbol again. 
-
-If I hover over it we'll see some options for:
-1. Add data insights
-2. Improve formatting
-3. Add a formula
-
-We'll explore these options soon but for now just click on the main logo again, which should open up a new window on the site of your screen. 
-
-From here there's some more default options Copilot is trying to suggest for us. 
-
-One thing we can see is the current mode is to **Allow editing**
-
-<img src="../trainer_images/3.png">
-
-If we click onto that we'll see **Plan** and also **Chat only**.
-
-The **Plan** option is a little more secure so instead of making changes directly to the data, we can see the updates first. 
-
-Let's pick **Chat only** though. 
-
-This will let us use Copilot like any LLM and provide queries or prompts on anything we're interested in. 
+You'll have noticed before that we wrote a very simple prompt in Copilot but, in general, as tasks we ask for become more complex, we want to follow a fairly universal prompting format.
 
 Like any sort of grammer, there's a correct anatomy of what makes a good prompt. 
 
@@ -184,7 +162,9 @@ If I then hit enter it'll crunch the numbers. Clearly, this is a pretty straight
 
 Again, the last time I did this it'll show you how it achieved the output and again, review the formula to make sure the reasoning stands up to your interpretation of the data. 
 
-So the framework around: role / context / task / contraints and output is to get relevant information out of Copilot.
+So the framework around: role / context / task / contraints and output is to get relevant information out of Copilot. 
+
+Later, when we look at your own examples, I'd encourage you to be very explicit about what you want Copilot to do and where you want it to look. If the data you need it to look at is in a certain column or cell then I'd recommend referencing that column or cell in the `Context` or `Task` section of the prompt.
 
 ### Prompting Mistakes
 
@@ -197,7 +177,6 @@ If I asked:
 Or if I said:
 
 - *"Give me information about placement dates and how many students have a surname beginning with A"*, again, it wouldn't be focused and the extra complexity can confuse the AI. 
-
 
 ### Main uses
 
