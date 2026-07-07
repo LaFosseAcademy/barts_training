@@ -194,8 +194,6 @@ So let me ask Copilot if there's any data quality issues.
 
 Again, quick and easy and we then decide how to approach the cleaning process.
 
-- **Make sure you switch to 'Editing' mode in Copilot window**
-
 ### Cleaning Data
 
 Last session we cleaned this file by:
@@ -204,9 +202,11 @@ Last session we cleaned this file by:
 - We standardised the values of the trust as well to have an **"Original Cohort"** column to seperate the different *Barts-continued* and *Barts extended* values we saw in the Trust column.
 - Finally we filled in some values from other spreadsheets as well, we used the **student allocations** spreadsheet to find some information about **Quinn Martin** on Row 32.  
 
-If we do this through Copilot, it's my recommendation to do this one query at a time.
+If we do this through Copilot, it's my recommendation to do this one query at a time initially.
 
 Copilot will get things wrong and one big query to clean this file may cause errors. If we work incrementally then we can make changes as we go.
+
+**NB Copilot chat will be creating a new file each time on OneDrive - it might be worth skipping Prompt 4 if needed**
 
 #### Prompt 1 - Trim Whitespace
 
@@ -245,27 +245,17 @@ These tasks which are repeatable, necessary and produce value are a good reason 
 
 An agent lets you write instructions once, in full detail and save them as a prompt.
 
+You have limited access to **Agents** on NHS systems but we can try and create something similar by chaining some of the prompts we used previously.
+
 Every time we use the agent it'll understand the:
 - context
 - file structure
 - column references
 
 
-Let me undo all the changes and in `0923 BSc Student allocations (LSBU-Barts Health)` then I'll go back to the SharePoint to access the file again.
+Let me reload `0923 BSc Student allocations (LSBU-Barts Health)` then I'll open a new chat and access the file again.
 
-<img src="../trainer_images/4.png">
-
-If we click on the **Create agent** button we'll be able to define some actions we want to repeatedly take. 
-
-We'll be taken to a new window. I can see on the top a button called **Sources**
-
-<img src="../trainer_images/5.png">
-
-This will give the agent access to files we want it to be able to use and we can select 20. 
-
-<img src="../trainer_images/6.png">
-
-Then I can select the files I want. 
+Then I'm going to add some files.
 
 We can include all the files present in the Documents folder but I'll just add the files in my personal folder for the timebeing. 
 
@@ -275,13 +265,6 @@ We can include all the files present in the Documents folder but I'll just add t
   - `student allocations`
 
 If we click on the **Behaviour** tab which sits next to **Sources** we can give the agent some behaviours. 
-
-#### Welcome messaging
-
-Under Welcome Messaging I'll add a little snippet about the agent. 
-
-*Data Prep Agent - Audits the file and tells you what it found - blank cells, duplicates, text-stored numbers, inconsistent casing, etc..*
-
 
 #### Starter prompts
 
@@ -304,19 +287,11 @@ Finally under **Agent instructions**, just to tell the agent it's role, limitati
 
 #### Overview
 
-Finally, I'm going to click back into the **Overview** tab and just give the agent a name: **Data Prep Agent**
+Notice that this is now stored on the left hand side in your **Chats** - it's not perfect, but once you've got your prompts to a place you're happy with, you can click here and re-use them. 
 
-- *Click 'Create agent'*
+One thing you may have noticed if you've used prompts like this before is that they perform much more poorly if you try to make changes directly to the files. 
 
-Once it's created, we should be able to see the resource in our personal folder and we're able to use those prompts repeatedly. 
-
-We're able to edit this and give the agent overview of new files when they arrive and perform these tasks quickly at the initial stage of our data lifecycle. 
-
-One thing you may have noticed if you've used agents before is that they perform much weaker if you try to prompt the agent to make changes directly to the files. 
-
-My recommendation would be if this is something you care to use Copilot to do, I'd recommend doing so directly from the file itself and using Copilot from there. 
-
-What the agent will do instead is give you formulas or scripts to copy and paste. 
+My recommendation would be if this is something you care to use Copilot to do, I'd recommend doing so bit by bit from the chat in the same way we have before.
 
 The training the AI recieves, we can assume will always be improving but right now we're not quite at the point where we can do full automation. 
 
