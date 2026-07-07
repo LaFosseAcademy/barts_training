@@ -278,9 +278,9 @@ This agent I hope is going to make interacting with our raw data more truthworth
 
 What we hopefully can see is on the right hand side of the screen an **Agent overview** showing us how it'll look when we go to use it. 
 
-#### Agent Instructions
+#### Desired Ouput
 
-Finally under **Agent instructions**, just to tell the agent it's role, limitations and the responses given.
+Finally, edit the prompt to clarify role, limitations and the responses.
 
 *Provide accurate information about the selected files in a formal and professional tone. Keep responses concise, easy to scan, and focused on key findings. Prioritise identifying missing data, data quality issues, anomalies, and opportunities to populate missing values using information from other selected files. Present results as a small number of short bullet points, include confidence levels where values are suggested, and avoid lengthy explanations unless specifically requested. Ensure outputs are suitable for rapid review and exploration of newly received datasets.*
 
@@ -299,10 +299,9 @@ The training the AI recieves, we can assume will always be improving but right n
 
 Let's take a look trying to use Copilot to create some visualisations. 
 
-I'm going to use: `Apprentice KPI tables April 2026`
+I'm going to use our Learner Tracker.
 
 - *Open 'L&D learner tracker FG'*
-- **NB WRONG FILE?**
 
 I've been asked to present back to the group regarding the ethnic background of our apprentices in each of the staff groups. 
 
@@ -310,13 +309,11 @@ Potentially to see if there's an over or under representation of any ethnicity b
 
 I know how to create a Pivot Table but I can delegate this responsibility to Copilot. 
 
-So if I open Copilot on the worksheet let me write a quick prompt. 
+So if I add the file to the chat, i can prompt:
 
-- *Make sure Copilot allows editing*
+- *Create a pivot table with a primary row of staff group and a column of ethnicity then for values a count of name ignoring staff groups of N/A and blank*
 
-- *Create a pivot table on a new sheet with a primary row of staff group and a column of ethnicity then for values a count of name ignoring staff groups of N/A and blank*
-
-Once that's created we can click **Done**
+Once that's created we can check this in the resultant link.
 
 It's at this stage I want to generate a visualisation for a PowerPoint Presentation I'll be presenting in a couple of days. 
 
@@ -324,19 +321,17 @@ It's at this stage I want to generate a visualisation for a PowerPoint Presentat
 
 - *Wait for chart to be created*
 
-Based on the chart, it's clear that there's not a even distribution of ethnicities in each staff group - which is something I can report back.
-
-**NB It is relatively even?**
+Based on the chart, it's clear that there's a relatively even distribution of ethnicities in each staff group - which is something I can report back.
 
 I want to change the chart title to cut through any noise and land this message.
 
-Both the pivot table and chart, despite being created by Copilot, we can customise ourself, so I'm going to take the opportunity to do this. 
+Both the pivot table and chart, despite being created by Copilot, we can customise ourself, so I'm going to take the opportunity to do this in Excel. 
 
 - *Edit chart heading to*: 'Even distribution of ethnicities amongst Staff Groups'
 
 This is where I believe a huge benefit to using Copilot is.
 
-With the Copilot Agent, currently it's really useful for summarising data or seeing links within the data. 
+So prompts like this are really useful for summarising data or seeing links within the data. 
 
 When you have lots of new files to constantly asses an agent is the right choice. 
 
