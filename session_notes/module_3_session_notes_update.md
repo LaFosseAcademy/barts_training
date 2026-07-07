@@ -425,6 +425,8 @@ I won't speak on this for too long but there's still value to be had.
 
 ### Teams
 
+**NB This is worth doing as an example - even if it does not work in Barts Health environment**
+
 I've taken the liberty of creating a fake teams conversation. 
 
 Imagine you've had a meeting and you've got a conversation thread. 
@@ -461,12 +463,14 @@ Again, it's worth us looking through the output because we can't guarantee any a
 
 ### Outlook
 
+**NB This is worth doing as an example - even if it does not work in Barts Health environment**
+
 Moving into Outlook we can use CoPilot for three main uses.
 
 1. To draft an email from a prompt
   - *"Draft an email to my team summarising October's mandatory training completion figures and asking for a response on any teams below 80% by Friday"*
 
-2. Or we can use CoPilot to summarise a long email thread to extract the current status or any outstanding actions without reading every message
+2. Or we can use CoPilot to summarise a long email thread to extract the current status or any outstanding actions without reading every message **Can work with COPY / PASTE**
 
 3. And suggesting a reply to an email, which can be then edited for tone and accuracy. 
 
