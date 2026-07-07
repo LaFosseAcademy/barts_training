@@ -206,7 +206,7 @@ If we do this through Copilot, it's my recommendation to do this one query at a 
 
 Copilot will get things wrong and one big query to clean this file may cause errors. If we work incrementally then we can make changes as we go.
 
-**NB Copilot chat will be creating a new file each time on OneDrive - it might be worth skipping Prompt 4 if needed**
+**NB Copilot chat will be creating a new file each time on OneDrive**
 
 #### Prompt 1 - Trim Whitespace
 
@@ -222,19 +222,13 @@ Standardise the text in column A to title case.
 
 Insert one new column immediately to the right of column A. Name it "Original Cohort". For each row, copy the value from column A into this new column, then remove any suffixes including "-contin", "-continued", "-ext degree", and any similar variations, so that values read as their base cohort only. 
 
-#### Prompt 4 — The lookup
-
-In column L, some cells are empty. Fill only those empty cells using student_allocations.xlsx, which is in the same SharePoint folder as this file. Match students by email address — email is in column J of this spreadsheet and column E of student_allocations.xlsx. Where a match is found, copy the Clinical Area value from column B of student_allocations.xlsx. Do not create new columns. Do not overwrite cells in column L that already have a value.
-
-- **NB Be careful here - it may find multiple copies of student_allocations.xlsx - might need to add explicit link. If it goes awry it can be talking point**
-
 #### Overview
 
 Each of these prompts is actually quite long. 
 
 They do the job we asked them quite well but there's a consideration to how much time we're actually saving. 
 
-AI is always learning and improving but a lot of the time you may be better plced to do things manually. 
+AI is always learning and improving but a lot of the time you may be better placed to do things manually. 
 
 Where Copilot really excels in relation to Excel spreadsheets is really in regards to:
 - Using it as a data-quality check
@@ -251,7 +245,6 @@ Every time we use the agent it'll understand the:
 - context
 - file structure
 - column references
-
 
 Let me reload `0923 BSc Student allocations (LSBU-Barts Health)` then I'll open a new chat and access the file again.
 
@@ -284,7 +277,6 @@ Finally, edit the prompt to clarify role, limitations and the responses.
 
 *Provide accurate information about the selected files in a formal and professional tone. Keep responses concise, easy to scan, and focused on key findings. Prioritise identifying missing data, data quality issues, anomalies, and opportunities to populate missing values using information from other selected files. Present results as a small number of short bullet points, include confidence levels where values are suggested, and avoid lengthy explanations unless specifically requested. Ensure outputs are suitable for rapid review and exploration of newly received datasets.*
 
-
 #### Overview
 
 Notice that this is now stored on the left hand side in your **Chats** - it's not perfect, but once you've got your prompts to a place you're happy with, you can click here and re-use them. 
@@ -299,9 +291,9 @@ The training the AI recieves, we can assume will always be improving but right n
 
 Let's take a look trying to use Copilot to create some visualisations. 
 
-I'm going to use our Learner Tracker.
+I'm going to use our Apprentice KPI tables.
 
-- *Open 'L&D learner tracker FG'*
+- *Open 'Apprentice KPI tables April 2026.xlsx'*
 
 I've been asked to present back to the group regarding the ethnic background of our apprentices in each of the staff groups. 
 
@@ -345,7 +337,7 @@ Another limitation of Copilot right now is cross service creation.
 
 We can't easily use to Copilot in Excel and ask it to create a PowerPoint deck. 
 
-So what I'll do is from my personal folderis create an empty PowerPoint and copy the graph I created over. 
+So what I'll do is from the same chat I'll create an empty PowerPoint and copy the graph I created over. 
 
 - *Create a new PowerPoint and copy the chart into Slide 1*
 
@@ -364,26 +356,13 @@ It may also prompt us as where to create the slide
 - after
 - or overwriting what we already have
 
-My main takeaway is that whether the service you want to use is:
-- Excel
-- Word
-- PowerPoint
-
-Create a file for that service first and then use the specific Copilot for that tool.
-
 Let's try and take this to Word as well. 
 
-- *Create a new Word file*
-
-Now in Copilot for Word I can provide my prompt to generate a one page summary. 
+Now in Copilot chat I can provide my prompt to generate a one page summary. 
 
 - *Act as an NHS Barts Health administrator reviewing workforce equality data. Analyse the data provided below showing the distribution of ethnicities across staff groups and provide a concise summary of the overall pattern, focusing on whether ethnicity representation is broadly evenly distributed across staff groups and highlighting any notable variations. Present the output as a short professional paragraph followed by 3–4 key takeaway bullet points suitable for inclusion in a report or presentation.*
 
-- *Copy in the pivot table from Excel*
-
-- *Hit enter*
-
-Use of Copilot in PowerPoint or Excel can be a game changer when it comes to producing a report or slide deck really quickly.
+Use of Copilot in Word, PowerPoint, or Excel can be a game changer when it comes to producing a report or slide deck really quickly.
 
 What Copilot usually gets right is the **structure** and **coverage** in response to the prompt you gave. 
 
