@@ -52,7 +52,7 @@ The takeaway from last time still holds: Copilot is only as trustworthy as the p
 
 ### Effective Prompting Recap
 
-- `Slide 2`
+- `Slide 3`
 
 We also covered the five-part anatomy of a good prompt. It's worth repeating because everything in today's session depends on it:
 
@@ -144,7 +144,7 @@ Talk through what to expect here:
 
 ## Block 5 - What to Use Copilot For, and Where It Falls Short *(10 mins)*
 
-- `Slide 3`
+- `Slide 4`
 
 Pulling together everything from both sessions, here's where Copilot chat earns its keep, and where it doesn't.
 
