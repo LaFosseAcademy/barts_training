@@ -105,7 +105,12 @@ Same prompt as before, with one addition — we need to explicitly ask for somet
 
 *"Create a pivot table with a primary row of staff group and a column of ethnicity, then for values a count of name, ignoring staff groups of N/A and blank. Give me this as a downloadable Excel file."*
 
-Once that comes back, open it briefly to check the structure looks right, then we'll go one step further and ask chat for the chart in the same way.
+Once that comes back, open it briefly to check the structure looks right, then we'll go one step further and ask chat for the chart in the same way. 
+
+**NB It's important to note a couple of things on this:
+
+1. In the several times I've run it, the pivot table has looked slightly different (for example, sometimes it has had a 'Total' row and sometimes it hasn't - this is a good argument for making the prompt even more specific
+2. The process of creating the 'finished' pivot in this instance is certainly quicker but there are then limitations with us being able to experiment with filters, values etc that are such a strength of pivot tables (the ones that you'd traditionally build by clicking on any cell and then 'Insert > Pivot Table') - again, this isn't a reason not to use the Copilot technique but the purpose of the sessions has been to help you understand where it's useful, and where it's less useful**
 
 *"Using the pivot table you just created, generate a stacked bar chart showing total count in each staff group, broken down by ethnicity. Give me this as a downloadable file with the chart included."*
 
