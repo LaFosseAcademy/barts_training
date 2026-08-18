@@ -10,11 +10,15 @@
 - Have `Prompt_Dictionary_Template.xlsx` ready to send to each participant, either before the session or at the start of Block 4
 - Files referenced from earlier modules, in case anyone wants to see the "clean" version again: `0923 BSc Student allocations (LSBU-Barts Health)`, `Apprentice KPI tables April 2026.xlsx`
 
+## 0. Welcome 
+
+Susana to welcome participants and go through schedule.
+
 ## Training
 
 - `Slide 1`
 
-## 1. Introduction *(10 mins)*
+## 1. Recap - Introduction *(10 mins)*
 
 Morning everyone, good to have you all back.
 
@@ -53,7 +57,7 @@ This is the phrase I want you to leave with today. An LLM analysing a messy spre
 
 Which brings us to the activity.
 
-### Activity — Spot the Dirty Data *(8–10 mins)*
+### Activity — Spot the Dirty Data *(8–10 mins)* - Simon / Emile
 
 - *Open* `Dirty_Data_Activity.xlsx`
 
@@ -74,7 +78,7 @@ Once you've cleaned and analysed something, the job isn't done. The last stage o
 
 Choosing the right evidence and the right format matters: a chart when someone needs to see a pattern at a glance, a one-page summary when someone needs the headline without the detail, a full table when someone needs to audit the numbers themselves. We covered generating all three of these through Copilot chat in the last session — today's reminder is just that the choice of format is a decision, not an afterthought.
 
-## 3. Questions
+## 3. Questions - Susana / Simon / Emile
 
 This is open floor — anything from any of the sessions so far is fair game, not just today's recap.
 
