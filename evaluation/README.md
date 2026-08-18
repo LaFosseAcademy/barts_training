@@ -86,7 +86,6 @@ A few prompts to seed the discussion if the room's quiet:
 
 - *"Has anyone tried using Copilot chat for something at work since the last session? How did it go?"*
 - *"Is there a task you're still not sure whether to hand to Copilot or do manually?"*
-- *"Did anything from the validation checklist — accuracy, completeness, tone, Barts Health specificity, actionability — catch you out?"*
 
 ## 4. Next Steps *(20 mins)*
 
