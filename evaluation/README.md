@@ -61,11 +61,13 @@ Which brings us to the activity.
 
 - *Open* `Dirty_Data_Activity.xlsx`
 
-I've put together a version of a spreadsheet you've seen before. I want you to find things you'd want to check or fix before you'd trust this sheet enough to analyse it or hand it to Copilot.
+We've put together a version of a spreadsheet you've seen before. If you go to Documents in Sharepoint, you'll find a file inside Dirty Data.
+
+It's the first spreadsheet we used in session one as we started to clean our data. The challenge for you is to inspect the spreadsheet and find things you'd want to check or fix before you'd trust this sheet enough to analyse it or hand it to Copilot.
 
 **Run as Paired Activity**
 
-**Aim for 8 things.** They range from the obvious to the easy-to-miss. A nudge if you get stuck: think back to the First-Look Audit Checklist from Module 1 — duplicates, blanks, number formats, date formats, inconsistent text, trailing spaces. Every issue on this sheet falls into one of those six buckets.
+**Aim for 8 things, there may be more.** They range from the obvious to the easy-to-miss. A nudge if you get stuck: think back to the First-Look Audit Checklist from Module 1 — duplicates, blanks, number formats, date formats, inconsistent text, trailing spaces. Every issue on this sheet falls into one of those six buckets.
 
 - *Give people 4–5 minutes to look write down, then take answers from the room*
 - *Reveal each issue as it's called out, using the categories above to group similar answers together*
