@@ -74,7 +74,7 @@ I've put together a version of a spreadsheet you've seen before. I want you to f
 
 ### Communicating what you find
 
-Once you've cleaned and analysed something, the job isn't done. The last stage of the lifecycle — Communication — is just as easy to get wrong as Cleaning is, and it's where a lot of good analysis goes to waste.
+Once you've cleaned and analysed something, the job isn't done. The penultimate stage of the lifecycle — Communication — is just as easy to get wrong as Cleaning is, and it's where a lot of good analysis goes to waste.
 
 Choosing the right evidence and the right format matters: a chart when someone needs to see a pattern at a glance, a one-page summary when someone needs the headline without the detail, a full table when someone needs to audit the numbers themselves. We covered generating all three of these through Copilot chat in the last session — today's reminder is just that the choice of format is a decision, not an afterthought.
 
