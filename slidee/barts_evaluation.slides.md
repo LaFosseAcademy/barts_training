@@ -1,4 +1,4 @@
-## Barts Health NHS x LaFosse 
+## Barts Health NHS x La Fosse 
 ## Recap and Evaluation
 
 ---
