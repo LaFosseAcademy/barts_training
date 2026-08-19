@@ -11,4 +11,8 @@
 
 ---
 
+<img src="./images/recap_manual_to_copilot_workflow.png">
+
+---
+
 <img src="./images/barts_health_validation_checklist.png">
