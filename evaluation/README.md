@@ -20,7 +20,7 @@ Susana to welcome participants and go through schedule.
 
 ## 1. Recap - Introduction *(10 mins)*
 
-Morning everyone, good to have you all back.
+Hi everyone, good to have you all back.
 
 This is the last session in the series, so today's a bit different in shape to the others. We're not covering new ground — everything we're doing today pulls together what you've already seen across Modules 1, 2, 3 and 4. The idea is to leave you with two things: sharper instincts for spotting bad data before it causes a problem, and a personal reference you'll actually keep using once this course is finished.
 
