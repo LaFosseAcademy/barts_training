@@ -61,9 +61,11 @@ Which brings us to the activity.
 
 - *Open* `Dirty_Data_Activity.xlsx`
 
-We've put together a version of a spreadsheet you've seen before. If you go to Documents in Sharepoint, you'll find a file inside Dirty Data.
+We've put together a version of a spreadsheet you've seen before. I know Simon described this as a game, it is a spreadsheet. If you go to Documents in Sharepoint, you'll find a file inside Dirty Data.
 
-It's the first spreadsheet we used in session one as we started to clean our data. The challenge for you is to inspect the spreadsheet and find things you'd want to check or fix before you'd trust this sheet enough to analyse it or hand it to Copilot.
+It's the first spreadsheet we used in session one as we started to clean our data. As Simon said earlier in the session, if our data is dirty, all the analysis, visualisations and any emails or reports we write up will inherit those initial issues. 
+
+The challenge for you is to inspect the spreadsheet and find things you'd want to check or fix before you'd trust this sheet enough to analyse it or hand it to Copilot.
 
 **Run as Paired Activity**
 
