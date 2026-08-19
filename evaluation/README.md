@@ -5,7 +5,7 @@
 
 ## Pre-Session Setup
 
-- Load Slide deck 
+- Load [Slide deck](./slidee/barts_evaluation.slides.md)
 - Open `Dirty_Data_Activity.xlsx` on the shared screen — **remove or hide the "Facilitator Answer Key" tab before sharing this file with participants**
 - Have `Prompt_Dictionary_Template.xlsx` ready to send to each participant, either before the session or at the start of Block 4
 - Files referenced from earlier modules, in case anyone wants to see the "clean" version again: `0923 BSc Student allocations (LSBU-Barts Health)`, `Apprentice KPI tables April 2026.xlsx`
